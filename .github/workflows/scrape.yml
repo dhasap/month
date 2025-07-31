@@ -29,6 +29,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'Feat: Update data komik terbaru'
-          # Bagian ini diubah untuk menyimpan semua file di dalam folder 'data'
-          file_pattern: 'data/*.json data/chapters/*.json'
+          # *** INI DIA PERBAIKANNYA ***
+          # Kita suruh dia mengawasi seluruh folder 'data'
+          file_pattern: 'data/'
           
