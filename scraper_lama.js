@@ -5,6 +5,7 @@ const fs = require('fs');
 // --- PENGATURAN KURA-KURA ---
 const HALAMAN_PER_JALAN = 5; // Ambil 5 halaman setiap kali jalan
 const FILE_STATUS = 'data/kura_kura_status.json';
+const FILE_ARSIP = 'data/archive-list.json';
 // ----------------------------
 
 const ensureDirectoryExistence = (filePath) => {
@@ -21,8 +22,13 @@ const ensureDirectoryExistence = (filePath) => {
   try {
     // Baca status terakhir
     let status = { lastPage: 0 };
+    ensureDirectoryExistence(FILE_STATUS);
     if (fs.existsSync(FILE_STATUS)) {
-      status = JSON.parse(fs.readFileSync(FILE_STATUS, 'utf-8'));
+      try {
+        status = JSON.parse(fs.readFileSync(FILE_STATUS, 'utf-8'));
+      } catch (e) {
+        console.log("File status rusak atau kosong, memulai dari awal.");
+      }
     }
     const startPage = status.lastPage + 1;
     console.log(`KURA-KURA: Memulai dari halaman ${startPage}`);
@@ -36,8 +42,8 @@ const ensureDirectoryExistence = (filePath) => {
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36');
 
     let allOldComics = [];
-    if (fs.existsSync('data/archive-list.json')) {
-        allOldComics = JSON.parse(fs.readFileSync('data/archive-list.json', 'utf-8'));
+    if (fs.existsSync(FILE_ARSIP)) {
+        allOldComics = JSON.parse(fs.readFileSync(FILE_ARSIP, 'utf-8'));
     }
 
     for (let i = 0; i < HALAMAN_PER_JALAN; i++) {
@@ -68,22 +74,23 @@ const ensureDirectoryExistence = (filePath) => {
 
       if (comicsOnPage.length === 0) {
           console.log(`KURA-KURA: Halaman ${currentPage} kosong, mungkin sudah halaman terakhir. Berhenti.`);
-          break;
+          status.lastPage = currentPage; // Simpan halaman terakhir yang dicek
+          break; // Keluar dari loop
       }
       
       allOldComics.push(...comicsOnPage);
       console.log(`KURA-KURA: Berhasil mendapatkan ${comicsOnPage.length} data dari halaman ${currentPage}.`);
+      status.lastPage = currentPage; // Update halaman terakhir yang berhasil diproses
     }
     
     // Hapus duplikat berdasarkan endpoint
     const uniqueComics = Array.from(new Map(allOldComics.map(item => [item['endpoint'], item])).values());
 
     console.log(`KURA-KURA: Total ${uniqueComics.length} komik di arsip. Menyimpan...`);
-    ensureDirectoryExistence('data/archive-list.json');
-    fs.writeFileSync('data/archive-list.json', JSON.stringify(uniqueComics, null, 2));
+    ensureDirectoryExistence(FILE_ARSIP);
+    fs.writeFileSync(FILE_ARSIP, JSON.stringify(uniqueComics, null, 2));
 
-    // Simpan halaman berikutnya untuk pekerjaan selanjutnya
-    status.lastPage = startPage + HALAMAN_PER_JALAN - 1;
+    // Simpan status terakhir
     fs.writeFileSync(FILE_STATUS, JSON.stringify(status));
     console.log(`KURA-KURA: Pekerjaan selesai. Pekerjaan selanjutnya akan dimulai dari halaman ${status.lastPage + 1}`);
 
@@ -94,4 +101,3 @@ const ensureDirectoryExistence = (filePath) => {
     if (browser) await browser.close();
   }
 })();
-                                                 
