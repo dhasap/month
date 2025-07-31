@@ -1,67 +1,62 @@
-// scraper.js - Otak Si Kelinci
 const puppeteer = require('puppeteer-core');
 const chromium = require('@sparticuz/chromium');
 const fs = require('fs');
 
-const JUMLAH_HALAMAN_BARU = 2;
-
-const ensureDirectoryExistence = (filePath) => {
-  const dirname = require('path').dirname(filePath);
-  if (fs.existsSync(dirname)) { return true; }
-  ensureDirectoryExistence(dirname);
-  fs.mkdirSync(dirname);
-};
-
 (async () => {
   let browser = null;
-  console.log(`KELINCI: Memulai scraper untuk ${JUMLAH_HALAMAN_BARU} halaman terbaru...`);
+  console.log("Memulai scraper dalam mode kamera untuk halaman PROJEK...");
+
   try {
     browser = await puppeteer.launch({
       args: chromium.args,
+      defaultViewport: chromium.defaultViewport,
       executablePath: await chromium.executablePath(),
       headless: chromium.headless,
+      ignoreHTTPSErrors: true,
     });
+
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36');
 
-    let latestChapters = [];
-    for (let i = 1; i <= JUMLAH_HALAMAN_BARU; i++) {
-      const url = `https://komikcast.li/project-list/page/${i}/`;
-      console.log(`KELINCI: Mengambil data dari ${url}`);
-      await page.goto(url, { waitUntil: 'networkidle2' });
-      const chaptersOnPage = await page.evaluate(() => {
-        const results = [];
-        const items = document.querySelectorAll('.listupd.project .utao');
-        items.forEach(item => {
-          const titleElement = item.querySelector('.luf > a.series > h3');
-          const chapterLinkElement = item.querySelector('.luf ul li:first-child a');
-          const imageElement = item.querySelector('.imgu a img');
-          if (titleElement && chapterLinkElement && imageElement) {
-            const chapterUrl = chapterLinkElement.getAttribute('href');
-            results.push({
-              title: titleElement.innerText.trim(),
-              latest_chapter_text: chapterLinkElement.innerText.trim(),
-              cover_image: imageElement.getAttribute('data-src') || imageElement.getAttribute('src'),
-              chapter_url: chapterUrl,
-              chapter_endpoint: chapterUrl.split('/').filter(Boolean).pop()
-            });
-          }
-        });
-        return results;
-      });
-      latestChapters.push(...chaptersOnPage);
-    }
+    // Kita akan fokus pada satu halaman saja untuk di-debug
+    const targetUrl = 'https://komikcast.li/project-list/page/1/';
+    console.log(`Membuka halaman target: ${targetUrl}`);
+    await page.goto(targetUrl, { waitUntil: 'networkidle2', timeout: 60000 });
 
-    console.log(`KELINCI: Berhasil mendapatkan ${latestChapters.length} data. Menyimpan ke manga-list.json...`);
-    ensureDirectoryExistence('data/manga-list.json');
-    fs.writeFileSync('data/manga-list.json', JSON.stringify(latestChapters, null, 2));
+    console.log("Menunggu 5 detik untuk memastikan semua konten dimuat...");
+    await new Promise(resolve => setTimeout(resolve, 5000));
+
+    // *** BAGIAN KAMERA ***
+    console.log("Mengambil screenshot halaman...");
+    fs.mkdirSync('debug', { recursive: true }); // Membuat folder debug
+    await page.screenshot({ path: 'debug/screenshot_project.png', fullPage: true });
+    console.log("Screenshot disimpan ke debug/screenshot_project.png");
+
+    console.log("Menyimpan konten HTML halaman...");
+    const htmlContent = await page.content();
+    fs.writeFileSync('debug/page_project.html', htmlContent);
+    console.log("HTML disimpan ke debug/page_project.html");
+    
+    console.log("Mencoba mengevaluasi halaman...");
+    const data = await page.evaluate(() => {
+      // Kita tetap coba selector lama, hasilnya akan disimpan
+      const items = document.querySelectorAll('.listupd.project .utao');
+      return {
+        jumlah_item_ditemukan: items.length
+      };
+    });
+
+    console.log(`Hasil evaluasi: ${data.jumlah_item_ditemukan} item ditemukan.`);
+    fs.writeFileSync('debug/hasil_data_project.json', JSON.stringify(data, null, 2));
+    console.log("Hasil data disimpan ke debug/hasil_data_project.json");
 
   } catch (error) {
-    console.error("KELINCI ERROR:", error);
+    console.error("Terjadi error:", error);
     process.exit(1);
   } finally {
-    if (browser) await browser.close();
-    console.log("KELINCI: Pekerjaan selesai.");
+    if (browser !== null) {
+      await browser.close();
+    }
+    console.log("Scraper mode kamera selesai.");
   }
 })();
-  
