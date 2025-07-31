@@ -1,0 +1,13 @@
+{
+  "name": "komik-scraper",
+  "version": "1.0.0",
+  "description": "Scraper otomatis untuk data komik",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node scraper.js"
+  },
+  "dependencies": {
+    "puppeteer-core": "^21.0.1",
+    "chrome-aws-lambda": "^10.1.0"
+  }
+}
