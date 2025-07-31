@@ -1,9 +1,8 @@
-# .github/workflows/scrape_lama.yml - Jadwal Si Kura-kura
 name: Scrape Komik Lama (Kura-kura)
 
 on:
   schedule:
-    # Menjalankan setiap hari jam 5 UTC (sekitar tengah malam WIB)
+    # Menjalankan setiap hari jam 17 UTC (sekitar tengah malam WIB)
     - cron: '0 17 * * *'
   workflow_dispatch:
 
@@ -29,5 +28,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'Chore(Kura-kura): Arsip data komik lama'
-          # Menyimpan semua file chapter baru dan file status
-          file_pattern: 'data/chapters/*.json data/last_page.txt'
+          # Menyimpan file arsip dan file status
+          file_pattern: 'data/archive-list.json data/kura_kura_status.json'
+          
