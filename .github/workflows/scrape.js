@@ -1,0 +1,34 @@
+name: Scrape Komik Baru (Kelinci) - MODE DEBUG
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run scraper
+        run: npm start
+
+      # Menyimpan hasil rekaman kamera sebagai artifact
+      - name: Upload debug artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-files-daftar-komik
+          path: |
+            debug/screenshot_daftar_komik.png
+            debug/page_daftar_komik.html
