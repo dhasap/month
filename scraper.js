@@ -2,9 +2,21 @@ const puppeteer = require('puppeteer-core');
 const chromium = require('@sparticuz/chromium');
 const fs = require('fs');
 
+// --- PENGATURAN ---
+// Ubah angka ini jika ingin mengambil lebih banyak halaman (Maksimal 3-4 agar aman)
+const JUMLAH_HALAMAN_YANG_DIAMBIL = 3; 
+// --------------------
+
+const ensureDirectoryExistence = (filePath) => {
+  const dirname = require('path').dirname(filePath);
+  if (fs.existsSync(dirname)) { return true; }
+  ensureDirectoryExistence(dirname);
+  fs.mkdirSync(dirname);
+};
+
 (async () => {
   let browser = null;
-  console.log("Memulai scraper dalam mode kamera untuk halaman PROJEK...");
+  console.log(`Memulai scraper produksi (target: ${JUMLAH_HALAMAN_YANG_DIAMBIL} halaman)...`);
 
   try {
     browser = await puppeteer.launch({
@@ -18,37 +30,79 @@ const fs = require('fs');
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36');
 
-    // Kita akan fokus pada satu halaman saja untuk di-debug
-    const targetUrl = 'https://komikcast.li/project-list/page/1/';
-    console.log(`Membuka halaman target: ${targetUrl}`);
-    await page.goto(targetUrl, { waitUntil: 'networkidle2', timeout: 60000 });
+    let allLatestChapters = [];
 
-    console.log("Menunggu 5 detik untuk memastikan semua konten dimuat...");
-    await new Promise(resolve => setTimeout(resolve, 5000));
+    for (let i = 1; i <= JUMLAH_HALAMAN_YANG_DIAMBIL; i++) {
+      const listUrl = `https://komikcast.li/project-list/page/${i}/`;
+      console.log(`Membuka halaman daftar projek: ${listUrl}`);
+      await page.goto(listUrl, { waitUntil: 'networkidle2', timeout: 60000 });
 
-    // *** BAGIAN KAMERA ***
-    console.log("Mengambil screenshot halaman...");
-    fs.mkdirSync('debug', { recursive: true }); // Membuat folder debug
-    await page.screenshot({ path: 'debug/screenshot_project.png', fullPage: true });
-    console.log("Screenshot disimpan ke debug/screenshot_project.png");
+      const chaptersOnPage = await page.evaluate(() => {
+        const results = [];
+        // *** INI DIA KACAMATA BARUNYA ***
+        const items = document.querySelectorAll('.list-update_item');
+        
+        items.forEach(item => {
+          const linkElement = item.querySelector('a');
+          const titleElement = item.querySelector('h3.title');
+          const chapterElement = item.querySelector('.chapter');
+          const imageElement = item.querySelector('img');
+          
+          if (linkElement && titleElement && chapterElement && imageElement) {
+            const chapterUrl = chapterElement.getAttribute('href'); // Ambil URL dari chapter, bukan dari item utama
+            if (chapterUrl) {
+              results.push({
+                title: titleElement.innerText.trim(),
+                latest_chapter_text: chapterElement.innerText.trim(),
+                cover_image: imageElement.getAttribute('src'),
+                chapter_url: chapterUrl,
+                chapter_endpoint: chapterUrl.split('/').filter(Boolean).pop()
+              });
+            }
+          }
+        });
+        return results;
+      });
+      
+      allLatestChapters.push(...chaptersOnPage);
+      console.log(`Berhasil mendapatkan ${chaptersOnPage.length} data dari halaman ${i}. Total sekarang: ${allLatestChapters.length}`);
+    }
 
-    console.log("Menyimpan konten HTML halaman...");
-    const htmlContent = await page.content();
-    fs.writeFileSync('debug/page_project.html', htmlContent);
-    console.log("HTML disimpan ke debug/page_project.html");
-    
-    console.log("Mencoba mengevaluasi halaman...");
-    const data = await page.evaluate(() => {
-      // Kita tetap coba selector lama, hasilnya akan disimpan
-      const items = document.querySelectorAll('.listupd.project .utao');
-      return {
-        jumlah_item_ditemukan: items.length
-      };
-    });
+    if (allLatestChapters.length === 0) {
+      console.error("Tidak ada data chapter yang ditemukan. Mungkin desain website berubah. Menghentikan proses.");
+      process.exit(1);
+    }
 
-    console.log(`Hasil evaluasi: ${data.jumlah_item_ditemukan} item ditemukan.`);
-    fs.writeFileSync('debug/hasil_data_project.json', JSON.stringify(data, null, 2));
-    console.log("Hasil data disimpan ke debug/hasil_data_project.json");
+    console.log(`Total ${allLatestChapters.length} chapter terbaru berhasil didapatkan. Menyimpan daftar isi...`);
+    ensureDirectoryExistence('data/manga-list.json');
+    fs.writeFileSync('data/manga-list.json', JSON.stringify(allLatestChapters, null, 2));
+
+    console.log("Memulai proses pengambilan gambar untuk setiap chapter...");
+    for (const chapter of allLatestChapters) {
+      console.log(`Mengambil data untuk: ${chapter.title} - ${chapter.latest_chapter_text}`);
+      await page.goto(chapter.chapter_url, { waitUntil: 'networkidle2' });
+
+      const chapterData = await page.evaluate(() => {
+        const chapterTitle = document.querySelector('.chapter_headpost h1')?.innerText.trim() || 'Judul tidak ditemukan';
+        const images = Array.from(document.querySelectorAll('#chapter_body .main-reading-area img')).map(el => {
+            let src = el.getAttribute('data-src') || el.getAttribute('src');
+            if (src) {
+                src = src.trim();
+                if (src.startsWith('//')) src = 'https:' + src;
+                return src.split('?')[0];
+            }
+            return null;
+        }).filter(Boolean);
+        const prev = document.querySelector('.nextprev a[rel="prev"]')?.getAttribute('href')?.split('/').filter(Boolean).pop() || null;
+        const next = document.querySelector('.nextprev a[rel="next"]')?.getAttribute('href')?.split('/').filter(Boolean).pop() || null;
+        return { title: chapterTitle, images, navigation: { prev, next } };
+      });
+
+      const filePath = `data/chapters/${chapter.chapter_endpoint}.json`;
+      ensureDirectoryExistence(filePath);
+      fs.writeFileSync(filePath, JSON.stringify(chapterData, null, 2));
+      console.log(`Data berhasil disimpan ke ${filePath}`);
+    }
 
   } catch (error) {
     console.error("Terjadi error:", error);
@@ -57,6 +111,7 @@ const fs = require('fs');
     if (browser !== null) {
       await browser.close();
     }
-    console.log("Scraper mode kamera selesai.");
+    console.log("Scraper produksi selesai.");
   }
 })();
+          
