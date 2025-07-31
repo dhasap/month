@@ -7,7 +7,7 @@
     "start": "node scraper.js"
   },
   "dependencies": {
-    "puppeteer-core": "^21.0.1",
-    "chrome-aws-lambda": "^10.1.0"
+    "puppeteer-core": "21.11.0",
+    "@sparticuz/chromium": "119.0.0"
   }
 }
