@@ -8,7 +8,7 @@ on:
   
   schedule:
     # Menjalankan setiap hari jam 17:00 UTC (sekitar tengah malam WIB)
-    - cron: '0 17 * * *'
+    - cron: '0 5 * * *'
 
 # Memberikan izin kepada robot untuk menulis ke repositori
 permissions:
