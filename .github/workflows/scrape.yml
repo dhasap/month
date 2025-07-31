@@ -1,8 +1,16 @@
-name: Scrape Komik Baru (Kelinci) - MODE DEBUG
+# Nama workflow untuk robot Kelinci
+name: Scrape Komik Baru (Kelinci)
 
+# Pemicu workflow
 on:
+  # Menjalankan setiap 1 jam sekali
+  schedule:
+    - cron: '0 * * * *'
+  
+  # Menambahkan tombol "Run workflow" agar bisa dijalankan manual
   workflow_dispatch:
 
+# Memberikan izin kepada robot untuk menulis ke repositori
 permissions:
   contents: write
 
@@ -21,14 +29,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run scraper
-        run: npm start
+      - name: Run scraper (Kelinci)
+        run: node scraper.js
 
-      # Menyimpan hasil rekaman kamera sebagai artifact
-      - name: Upload debug artifacts
-        uses: actions/upload-artifact@v4
+      - name: Commit and push if changed
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          name: debug-files-daftar-komik
-          path: |
-            debug/screenshot_daftar_komik.png
-            debug/page_daftar_komik.html
+          commit_message: 'Feat(Kelinci): Update data komik baru'
+          # Menyimpan semua file yang dihasilkan oleh si Kelinci
+          file_pattern: 'data/'
+          
