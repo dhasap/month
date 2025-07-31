@@ -1,17 +1,8 @@
-# Nama workflow untuk robot Kura-kura
-name: Scrape Komik Lama (Kura-kura)
+name: Scrape Komik Baru (Kura kura) - MODE DEBUG
 
-# Pemicu workflow
 on:
-  # Menambahkan tombol "Run workflow" agar bisa dijalankan manual
   workflow_dispatch:
-  
-  schedule:
-    # Jadwal ini sengaja dinonaktifkan dengan tanda '#'
-    # Hapus tanda '#' di baris bawah ini jika kamu ingin dia berjalan otomatis setiap tengah malam
-    # - cron: '0 17 * * *'
 
-# Memberikan izin kepada robot untuk menulis ke repositori
 permissions:
   contents: write
 
@@ -30,12 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run scraper (Kura-kura)
-        run: node scraper_lama.js
+      - name: Run scraper
+        run: npm start
 
-      - name: Commit and push if changed
-        uses: stefanzweifel/git-auto-commit-action@v4
+      # Menyimpan hasil rekaman kamera sebagai artifact
+      - name: Upload debug artifacts
+        uses: actions/upload-artifact@v4
         with:
-          commit_message: 'Chore(Kura-kura): Arsip data komik lama'
-          file_pattern: 'data/archive-list.json data/kura_kura_status.json'
-          
+          name: debug-files-daftar-komik
+          path: |
+            debug/screenshot_daftar_komik.png
+            debug/page_daftar_komik.html
+            
