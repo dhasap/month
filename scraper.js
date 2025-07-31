@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer-core');
-const chromium = require('chrome-aws-lambda');
+// Menggunakan alat baru yang lebih canggih
+const chromium = require('@sparticuz/chromium');
 const fs = require('fs');
 
 // Fungsi untuk memastikan folder ada
@@ -14,13 +15,16 @@ const ensureDirectoryExistence = (filePath) => {
 
 (async () => {
   let browser = null;
-  console.log("Memulai scraper canggih...");
+  console.log("Memulai scraper dengan alat yang diperbarui...");
 
   try {
+    // Cara baru untuk menyalakan browser
     browser = await puppeteer.launch({
-      args: chromium.args,
-      executablePath: await chromium.executablePath,
-      headless: chromium.headless,
+        args: chromium.args,
+        defaultViewport: chromium.defaultViewport,
+        executablePath: await chromium.executablePath(),
+        headless: chromium.headless,
+        ignoreHTTPSErrors: true,
     });
 
     const page = await browser.newPage();
@@ -33,7 +37,6 @@ const ensureDirectoryExistence = (filePath) => {
     const latestChapters = await page.evaluate(() => {
       const results = [];
       const items = document.querySelectorAll('.list-update_item');
-      // Kita batasi hanya 15 chapter terbaru agar proses tidak terlalu lama
       for (let i = 0; i < Math.min(items.length, 15); i++) {
         const item = items[i];
         const titleElement = item.querySelector('.title');
@@ -90,7 +93,7 @@ const ensureDirectoryExistence = (filePath) => {
 
   } catch (error) {
     console.error("Terjadi error:", error);
-    process.exit(1); // Keluar dengan status error agar workflow gagal
+    process.exit(1);
   } finally {
     if (browser !== null) {
       await browser.close();
@@ -98,4 +101,4 @@ const ensureDirectoryExistence = (filePath) => {
     console.log("Scraper canggih selesai.");
   }
 })();
-            
+      
