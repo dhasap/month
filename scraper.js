@@ -2,7 +2,11 @@ const puppeteer = require('puppeteer-core');
 const chromium = require('@sparticuz/chromium');
 const fs = require('fs');
 
-// Fungsi untuk memastikan folder ada
+// --- PENGATURAN ---
+// Ubah angka ini jika ingin mengambil lebih banyak halaman (Maksimal 3-4 agar aman)
+const JUMLAH_HALAMAN_YANG_DIAMBIL = 3; 
+// --------------------
+
 const ensureDirectoryExistence = (filePath) => {
   const dirname = require('path').dirname(filePath);
   if (fs.existsSync(dirname)) { return true; }
@@ -12,7 +16,7 @@ const ensureDirectoryExistence = (filePath) => {
 
 (async () => {
   let browser = null;
-  console.log("Memulai scraper produksi...");
+  console.log(`Memulai scraper multi-halaman (target: ${JUMLAH_HALAMAN_YANG_DIAMBIL} halaman)...`);
 
   try {
     browser = await puppeteer.launch({
@@ -26,47 +30,53 @@ const ensureDirectoryExistence = (filePath) => {
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36');
 
-    console.log("Membuka halaman utama Komikcast...");
-    await page.goto('https://komikcast.li', { waitUntil: 'networkidle2', timeout: 60000 });
+    let allLatestChapters = [];
 
-    console.log("Mengambil daftar chapter terbaru dari 'Update Projek'...");
-    const latestChapters = await page.evaluate(() => {
-      const results = [];
-      // *** INI DIA KACAMATA BARUNYA ***
-      // Kita menargetkan daftar "Update Projek" yang lebih stabil
-      const items = document.querySelectorAll('.listupd.project .utao');
-      
-      for (let i = 0; i < Math.min(items.length, 15); i++) {
-        const item = items[i];
-        const titleElement = item.querySelector('.luf > a.series > h3');
-        const chapterLinkElement = item.querySelector('.luf ul li:first-child a');
-        const imageElement = item.querySelector('.imgu a img');
+    // Loop untuk setiap halaman
+    for (let i = 1; i <= JUMLAH_HALAMAN_YANG_DIAMBIL; i++) {
+      const listUrl = `https://komikcast.li/project-list/page/${i}/`;
+      console.log(`Membuka halaman daftar projek: ${listUrl}`);
+      await page.goto(listUrl, { waitUntil: 'networkidle2', timeout: 60000 });
+
+      const chaptersOnPage = await page.evaluate(() => {
+        const results = [];
+        const items = document.querySelectorAll('.listupd.project .utao');
         
-        if (titleElement && chapterLinkElement && imageElement) {
-          const chapterUrl = chapterLinkElement.getAttribute('href');
-          results.push({
-            title: titleElement.innerText.trim(),
-            latest_chapter_text: chapterLinkElement.innerText.trim(),
-            cover_image: imageElement.getAttribute('data-src') || imageElement.getAttribute('src'),
-            chapter_url: chapterUrl,
-            chapter_endpoint: chapterUrl.split('/').filter(Boolean).pop()
-          });
-        }
-      }
-      return results;
-    });
+        items.forEach(item => {
+          const titleElement = item.querySelector('.luf > a.series > h3');
+          const chapterLinkElement = item.querySelector('.luf ul li:first-child a');
+          const imageElement = item.querySelector('.imgu a img');
+          
+          if (titleElement && chapterLinkElement && imageElement) {
+            const chapterUrl = chapterLinkElement.getAttribute('href');
+            results.push({
+              title: titleElement.innerText.trim(),
+              latest_chapter_text: chapterLinkElement.innerText.trim(),
+              cover_image: imageElement.getAttribute('data-src') || imageElement.getAttribute('src'),
+              chapter_url: chapterUrl,
+              chapter_endpoint: chapterUrl.split('/').filter(Boolean).pop()
+            });
+          }
+        });
+        return results;
+      });
+      
+      allLatestChapters.push(...chaptersOnPage);
+      console.log(`Berhasil mendapatkan ${chaptersOnPage.length} data dari halaman ${i}. Total sekarang: ${allLatestChapters.length}`);
+    }
 
-    if (latestChapters.length === 0) {
-      console.error("Tidak ada data chapter yang ditemukan. Mungkin desain website berubah. Menghentikan proses.");
+    if (allLatestChapters.length === 0) {
+      console.error("Tidak ada data chapter yang ditemukan. Menghentikan proses.");
       process.exit(1);
     }
 
-    console.log(`Berhasil mendapatkan ${latestChapters.length} chapter terbaru. Menyimpan daftar isi...`);
+    console.log(`Total ${allLatestChapters.length} chapter terbaru berhasil didapatkan. Menyimpan daftar isi...`);
     ensureDirectoryExistence('data/manga-list.json');
-    fs.writeFileSync('data/manga-list.json', JSON.stringify(latestChapters, null, 2));
+    fs.writeFileSync('data/manga-list.json', JSON.stringify(allLatestChapters, null, 2));
 
     console.log("Memulai proses pengambilan gambar untuk setiap chapter...");
-    for (const chapter of latestChapters) {
+    for (const chapter of allLatestChapters) {
+      // Logika untuk mengambil detail chapter tetap sama
       console.log(`Mengambil data untuk: ${chapter.title} - ${chapter.latest_chapter_text}`);
       await page.goto(chapter.chapter_url, { waitUntil: 'networkidle2' });
 
