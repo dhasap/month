@@ -2,10 +2,9 @@ const puppeteer = require('puppeteer-core');
 const chromium = require('@sparticuz/chromium');
 const fs = require('fs');
 
-// --- PENGATURAN ---
-// Ubah angka ini jika ingin mengambil lebih banyak halaman (Maksimal 3-4 agar aman)
-const JUMLAH_HALAMAN_YANG_DIAMBIL = 3; 
-// --------------------
+// --- PENGATURAN KELINCI ---
+const JUMLAH_HALAMAN_BARU = 3; 
+// -------------------------
 
 const ensureDirectoryExistence = (filePath) => {
   const dirname = require('path').dirname(filePath);
@@ -16,40 +15,35 @@ const ensureDirectoryExistence = (filePath) => {
 
 (async () => {
   let browser = null;
-  console.log(`Memulai scraper produksi (target: ${JUMLAH_HALAMAN_YANG_DIAMBIL} halaman)...`);
+  console.log(`KELINCI: Memulai scraper untuk ${JUMLAH_HALAMAN_BARU} halaman terbaru...`);
 
   try {
     browser = await puppeteer.launch({
       args: chromium.args,
-      defaultViewport: chromium.defaultViewport,
       executablePath: await chromium.executablePath(),
       headless: chromium.headless,
-      ignoreHTTPSErrors: true,
     });
 
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36');
 
     let allLatestChapters = [];
-
-    for (let i = 1; i <= JUMLAH_HALAMAN_YANG_DIAMBIL; i++) {
+    for (let i = 1; i <= JUMLAH_HALAMAN_BARU; i++) {
       const listUrl = `https://komikcast.li/project-list/page/${i}/`;
-      console.log(`Membuka halaman daftar projek: ${listUrl}`);
+      console.log(`KELINCI: Membuka halaman: ${listUrl}`);
       await page.goto(listUrl, { waitUntil: 'networkidle2', timeout: 60000 });
 
       const chaptersOnPage = await page.evaluate(() => {
         const results = [];
-        // *** INI DIA KACAMATA BARUNYA ***
         const items = document.querySelectorAll('.list-update_item');
         
         items.forEach(item => {
-          const linkElement = item.querySelector('a');
           const titleElement = item.querySelector('h3.title');
           const chapterElement = item.querySelector('.chapter');
           const imageElement = item.querySelector('img');
           
-          if (linkElement && titleElement && chapterElement && imageElement) {
-            const chapterUrl = chapterElement.getAttribute('href'); // Ambil URL dari chapter, bukan dari item utama
+          if (titleElement && chapterElement && imageElement) {
+            const chapterUrl = chapterElement.getAttribute('href');
             if (chapterUrl) {
               results.push({
                 title: titleElement.innerText.trim(),
@@ -65,21 +59,21 @@ const ensureDirectoryExistence = (filePath) => {
       });
       
       allLatestChapters.push(...chaptersOnPage);
-      console.log(`Berhasil mendapatkan ${chaptersOnPage.length} data dari halaman ${i}. Total sekarang: ${allLatestChapters.length}`);
+      console.log(`KELINCI: Berhasil mendapatkan ${chaptersOnPage.length} data dari halaman ${i}.`);
     }
 
     if (allLatestChapters.length === 0) {
-      console.error("Tidak ada data chapter yang ditemukan. Mungkin desain website berubah. Menghentikan proses.");
+      console.error("KELINCI: Tidak ada data chapter yang ditemukan. Mungkin desain website berubah.");
       process.exit(1);
     }
 
-    console.log(`Total ${allLatestChapters.length} chapter terbaru berhasil didapatkan. Menyimpan daftar isi...`);
+    console.log(`KELINCI: Total ${allLatestChapters.length} chapter terbaru didapatkan. Menyimpan ke manga-list.json...`);
     ensureDirectoryExistence('data/manga-list.json');
     fs.writeFileSync('data/manga-list.json', JSON.stringify(allLatestChapters, null, 2));
 
-    console.log("Memulai proses pengambilan gambar untuk setiap chapter...");
+    console.log("KELINCI: Memulai pengambilan detail chapter...");
     for (const chapter of allLatestChapters) {
-      console.log(`Mengambil data untuk: ${chapter.title} - ${chapter.latest_chapter_text}`);
+      console.log(`KELINCI: Mengambil detail untuk: ${chapter.chapter_endpoint}`);
       await page.goto(chapter.chapter_url, { waitUntil: 'networkidle2' });
 
       const chapterData = await page.evaluate(() => {
@@ -101,17 +95,15 @@ const ensureDirectoryExistence = (filePath) => {
       const filePath = `data/chapters/${chapter.chapter_endpoint}.json`;
       ensureDirectoryExistence(filePath);
       fs.writeFileSync(filePath, JSON.stringify(chapterData, null, 2));
-      console.log(`Data berhasil disimpan ke ${filePath}`);
+      console.log(`KELINCI: Detail untuk ${chapter.chapter_endpoint} berhasil disimpan.`);
     }
 
   } catch (error) {
-    console.error("Terjadi error:", error);
+    console.error("KELINCI ERROR:", error);
     process.exit(1);
   } finally {
-    if (browser !== null) {
-      await browser.close();
-    }
-    console.log("Scraper produksi selesai.");
+    if (browser) await browser.close();
+    console.log("KELINCI: Pekerjaan selesai.");
   }
 })();
-          
+                                              
