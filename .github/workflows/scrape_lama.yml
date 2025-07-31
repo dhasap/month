@@ -3,8 +3,10 @@ name: Scrape Komik Lama (Kura-kura)
 on:
   schedule:
     # Menjalankan setiap hari jam 17 UTC (sekitar tengah malam WIB)
-    - cron: '0 17 * * *'
+    # Jadwal ini dinonaktifkan sementara dengan tanda '#' agar tidak berjalan otomatis
+    # - cron: '0 17 * * *'
   workflow_dispatch:
+    # Tombol untuk menjalankan manual tetap aktif
 
 permissions:
   contents: write
