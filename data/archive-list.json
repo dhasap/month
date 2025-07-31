@@ -1,1 +1,687 @@
-[]
+[
+  {
+    "title": "Absolute Sword Sense",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/06/aaaaaaaa-1.webp",
+    "endpoint": "absolute-sword-sense"
+  },
+  {
+    "title": "The Max-Level Player’s 100th Regression",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/03/resource-e1743515620349.png",
+    "endpoint": "the-max-level-players-100th-regression"
+  },
+  {
+    "title": "A Bad Person",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/06/abp23531412-e1688047543380.jpg",
+    "endpoint": "a-bad-person"
+  },
+  {
+    "title": "The Regressed Mercenary’s Machinations",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/09/Mercenarys.jpg",
+    "endpoint": "the-regressed-mercenarys-machinations"
+  },
+  {
+    "title": "Reincarnation Of The Fist King",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/06/rfk23423432-scaled-e1749967482466.webp",
+    "endpoint": "reincarnation-of-the-fist-king"
+  },
+  {
+    "title": "Castle 2: On Top of Everyone",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/06/gdasgq3wgvasdvsadbsav.jpg",
+    "endpoint": "castle-2-on-top-of-everyone"
+  },
+  {
+    "title": "Be the Actor",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/01/beactor.jpeg",
+    "endpoint": "be-the-actor"
+  },
+  {
+    "title": "The Game’s Addict Reset",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/tgr355343-e1747112338158.jpg",
+    "endpoint": "the-games-addict-reset"
+  },
+  {
+    "title": "Dan-chan Wa Gohan o Toritai",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/dfa6we465e.jpg",
+    "endpoint": "dan-chan-wa-gohan-o-toritai"
+  },
+  {
+    "title": "Soul Land II",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2017/11/Soul_Land_II.jpg",
+    "endpoint": "soul-land-ii"
+  },
+  {
+    "title": "My Empress Disciple Is About to Turn Dark",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/1736042749-9507-i470050.jpg",
+    "endpoint": "my-empress-disciple-is-about-to-turn-dark"
+  },
+  {
+    "title": "Infinite Mage",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/01/infinte.jpg",
+    "endpoint": "infinite-mage"
+  },
+  {
+    "title": "Eleceed",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2020/12/31013-e1609090459258.jpg",
+    "endpoint": "eleceed"
+  },
+  {
+    "title": "The Regressed Son of a Duke is an Assassin",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/02/Regressed-Son.jpg",
+    "endpoint": "the-regressed-son-of-a-duke-is-an-assassin"
+  },
+  {
+    "title": "Day Walker",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/08/33w6e5.jpg",
+    "endpoint": "day-walker"
+  },
+  {
+    "title": "I Became the Tyrant of a Defense Game",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/Tyrant-e1748363656920.jpg",
+    "endpoint": "i-became-the-tyrant-of-a-defense-game"
+  },
+  {
+    "title": "The Third Prince Of The Fallen Kingdom has Regressed",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/06/prince.jpg",
+    "endpoint": "the-third-prince-of-the-fallen-kingdom-has-regressed"
+  },
+  {
+    "title": "The Former Mercenary’s Life as a Prosecutor",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/06/1750951854-8007-i491863.jpg",
+    "endpoint": "the-former-mercenarys-life-as-a-prosecutor"
+  },
+  {
+    "title": "Seriously Dating a Succubus",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/03/sd27342422-e1648126950373.jpg",
+    "endpoint": "seriously-dating-a-succubus"
+  },
+  {
+    "title": "Bloodhound’s Regression Instinct",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/11/br642523423-e1700792931198.jpg",
+    "endpoint": "bloodhounds-regression-instinct"
+  },
+  {
+    "title": "Youngest Son of the NamGung Clan",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/Namgung-e1748362142117.jpg",
+    "endpoint": "youngest-son-of-the-namgung-clan"
+  },
+  {
+    "title": "I Work Nine To Five In The Immortal Cultivation World",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/07/work_nine-scaled.jpg",
+    "endpoint": "i-work-nine-to-five-in-the-immortal-cultivation-world"
+  },
+  {
+    "title": "The Novel’s Extra (Remake)",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/03/Novels_Extra_Cover-e1729136786529.jpg",
+    "endpoint": "the-novels-extra"
+  },
+  {
+    "title": "Maxed Out Leveling",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/07/Maxed_Out_Leveling.jpg",
+    "endpoint": "maxed-out-leveling"
+  },
+  {
+    "title": "Monster no Goshujin-sama",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/01/mng12423532452-e1672831382700.jpg",
+    "endpoint": "monster-no-goshujin-sama"
+  },
+  {
+    "title": "Sakigake no Hana Miko",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/07/https___cdn-img.pocket.shonenmagazine.jpg",
+    "endpoint": "sakigake-no-hana-miko"
+  },
+  {
+    "title": "The Undefeatable Swordsman",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/02/undefeatable_Swordsman-e1746855018904.jpg",
+    "endpoint": "the-undefeatable-swordsman"
+  },
+  {
+    "title": "Traveling Through Time and Space to Become an Unlucky NPC: I Have a Wife to Protect Me",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/06/npc.webp",
+    "endpoint": "traveling-through-time-and-space-to-become-an-unlucky-npc-i-have-a-wife-to-protect-me"
+  },
+  {
+    "title": "Dark Lady Isekai",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/07/dark.jpg",
+    "endpoint": "dark-lady-isekai"
+  },
+  {
+    "title": "I Build an Industrial Empire on the Magic Continent",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/10/1730007038-2739-i465757.jpg",
+    "endpoint": "i-build-an-industrial-empire-on-the-magic-continent"
+  },
+  {
+    "title": "Cultivation Begins by Raising the Demon Clan’s Empress",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/Cultivation-Begins-by-Raising-the-Demon-Clans-Empress-193x278-1.webp",
+    "endpoint": "cultivation-begins-by-raising-the-demon-clans-empress"
+  },
+  {
+    "title": "Han Dae Sung Returned From Hell",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/03/handae.jpg",
+    "endpoint": "han-dae-sung-returned-from-hell"
+  },
+  {
+    "title": "Marriage Gray",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/12/LylWmv.jpg",
+    "endpoint": "marriage-gray"
+  },
+  {
+    "title": "Koori no Hime wa Chiisana Hidamari de Tokasaretai",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/08/kaori.jpg",
+    "endpoint": "koori-no-hime-wa-chiisana-hidamari-de-tokasaretai"
+  },
+  {
+    "title": "Kuni wo Owareta Ryuushi-san, Hirowareta Ringoku de Ukkari Musou shite Shimau.",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/07/kuni.jpg",
+    "endpoint": "kuni-wo-owareta-ryuushi-san-hirowareta-ringoku-de-ukkari-musou-shite-shimau"
+  },
+  {
+    "title": "Hiding a Logistics Center in the Apocalypse",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/09/hial21512321-e1725466530387.jpg",
+    "endpoint": "hiding-a-logistics-center-in-the-apocalypse"
+  },
+  {
+    "title": "The New Employee Kim Chul-Soo",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/07/new.jpg",
+    "endpoint": "the-new-employee-kim-chul-soo"
+  },
+  {
+    "title": "Reincarnated In a Cursed Game",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/08/cursed_game.jpg",
+    "endpoint": "reincarnated-in-a-cursed-game"
+  },
+  {
+    "title": "Return of the Genius Swordmaster",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/06/img-5b835de0dfa0589aea7a959424d49a93.jpg",
+    "endpoint": "return-of-the-genius-swordmaster"
+  },
+  {
+    "title": "Trinity Seven",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2021/09/ts2164434224525-e1631144537615.jpg",
+    "endpoint": "trinity-seven"
+  },
+  {
+    "title": "Myst, Might, Mayhem",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/wow.jpg",
+    "endpoint": "myst-might-mayhem"
+  },
+  {
+    "title": "The Second Eunuch Regains His Manhood",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/09/Kasim-Kedua-mendapatkan-kembali-Kejantanannya.jpg",
+    "endpoint": "the-second-eunuch-regains-his-manhood"
+  },
+  {
+    "title": "Ojou-sama no Shimobe",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/09/GXmGB1.jpg",
+    "endpoint": "ojousama-no-shimobe"
+  },
+  {
+    "title": "A Story About Smoking at the Back of the (Supermarket Super no Ura de Yani Suu Futari)",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/03/smoking.jpg",
+    "endpoint": "a-story-about-smoking-at-the-back-of-the-supermarket"
+  },
+  {
+    "title": "Demon’s Sword Master of Excalibur School",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/7yOOld-s.jpg",
+    "endpoint": "demons-sword-master-of-excalibur-school"
+  },
+  {
+    "title": "Tyranno Noh Kyung-Soo",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/tns53243243223-e1745394447694.jpg",
+    "endpoint": "tyranno-noh-kyung-soo"
+  },
+  {
+    "title": "Myriad Tribes Invasion: Rearguard’s Resolute Unity",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/02/myriad.jpg",
+    "endpoint": "myriad-tribes-invasion-rearguards-resolute-unity"
+  },
+  {
+    "title": "My Unbeatable Passive Skill Lets Me Deal Massive Damage!",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/11/54d6w84e.jpg",
+    "endpoint": "my-unbeatable-passive-skill-lets-me-deal-massive-damage"
+  },
+  {
+    "title": "I Love the Demon Lord So Much That Even My Female Disciples Want to Kill Me",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/01/6d4aw654e.jpg",
+    "endpoint": "i-love-the-demon-lord-so-much-that-even-my-female-disciples-want-to-kill-me"
+  },
+  {
+    "title": "Naze Boku no Sekai wo Daremo Oboeteinai no ka?",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2020/12/BT000052958600600601-e1609053594219.jpg",
+    "endpoint": "naze-boku-no-sekai-wo-daremo-oboeteinai-no-ka"
+  },
+  {
+    "title": "Re-Living My Life with a Boyfriend Who Doesn’t Remember Me",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/10/5c4919f2-d60a-4c8b-915b-ffabc6c198d0.jpg",
+    "endpoint": "re-living-my-life-with-a-boyfriend-who-doesnt-remember-me"
+  },
+  {
+    "title": "Tower Of God: Side Story Urek Mazino",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/GprAEw_bEAIxtPI.png",
+    "endpoint": "tower-of-god-side-story-urek-mazino"
+  },
+  {
+    "title": "My Bias Gets on the Last Train",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/12/98bd7e38-799b-4291-ad14-778b63427108.jpg",
+    "endpoint": "my-bias-gets-on-the-last-train"
+  },
+  {
+    "title": "Juujika no Rokunin",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/12/04893604-7bf0-4f8a-908a-a9d480c56914.jpg",
+    "endpoint": "juujika-no-rokunin"
+  },
+  {
+    "title": "I’m a Super Rich Guy, So It’s Reasonable For Me to Be a Scumbag",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/1752818032-6556-i494367.jpg",
+    "endpoint": "im-a-super-rich-guy-so-its-reasonable-for-me-to-be-a-scumbag"
+  },
+  {
+    "title": "The First Ancestor in History",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2021/07/tfi18742135-e1627037328253.jpg",
+    "endpoint": "the-first-ancestor-in-history"
+  },
+  {
+    "title": "This is the Law",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/07/resource-1-e1734140622872.jpg",
+    "endpoint": "this-is-the-law"
+  },
+  {
+    "title": "I Reincarnated As The Crazed Heir",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/½A¸®Ai_AE÷½oAI_½ae³×AI_690x1000.jpg",
+    "endpoint": "i-reincarnated-as-the-crazed-heir"
+  },
+  {
+    "title": "Heroes, Demons & Villains",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/06/asasdasdasd.webp",
+    "endpoint": "heroes-demons-villains"
+  },
+  {
+    "title": "The Reincarnation of the Forbidden Archmage",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/06/forbidden.jpg",
+    "endpoint": "the-reincarnation-of-the-forbidden-archmage"
+  },
+  {
+    "title": "Gods of All People: I Sacrificed Hundreds of Millions of Living Beings To Become a God",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/7yKyak-m.jpg",
+    "endpoint": "gods-of-all-people-i-sacrificed-hundreds-of-millions-of-living-beings-to-become-a-god"
+  },
+  {
+    "title": "I Was Forced by the System to Become a Villain",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/09/333ew.jpg",
+    "endpoint": "i-was-forced-by-the-system-to-become-a-villain"
+  },
+  {
+    "title": "Peerless Soul (Peerless Battle Spirit)",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2019/11/Peerless-Soul-193x278.jpg",
+    "endpoint": "peerless-soul"
+  },
+  {
+    "title": "The Last Master of Jongnam Sect",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/EOdGDx-m.jpg",
+    "endpoint": "the-last-master-of-jongnam-sect"
+  },
+  {
+    "title": "I’m Being Misunderstood as a Soccer Genius",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/12/3e7a6cba-479c-4ac7-9091-536f49b11f91-807214-1hVIopJy.jpg",
+    "endpoint": "im-being-misunderstood-as-a-soccer-genius"
+  },
+  {
+    "title": "S-Class Hunter Heals with Monsters",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/Hunter.jpg",
+    "endpoint": "s-class-hunter-heals-with-monsters"
+  },
+  {
+    "title": "The Indomitable Martial King",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/Indomitable_Martial_king-e1747936396142.jpg",
+    "endpoint": "the-indomitable-martial-king"
+  },
+  {
+    "title": "DANDADAN",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/09/danda080922.jpg",
+    "endpoint": "dandadan"
+  },
+  {
+    "title": "The MAX Leveled Hero Will Return!",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/09/sang_pahlawan_F2.jpg",
+    "endpoint": "the-max-leveled-hero-will-return"
+  },
+  {
+    "title": "The Fox-Eyed Villain Of The Demon Academy",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/1744503439-1604-i484079.jpg",
+    "endpoint": "the-fox-eyed-villain-of-the-demon-academy"
+  },
+  {
+    "title": "Surviving as a Genius on Borrowed Time",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/09/borrowed.jpg",
+    "endpoint": "surviving-as-a-genius-on-borrowed-time"
+  },
+  {
+    "title": "Lilia’s Pregnancy Spells the World’s End",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/07/sdagg.jpg",
+    "endpoint": "lilias-pregnancy-spells-the-worlds-end"
+  },
+  {
+    "title": "It All Starts With Trillions Of Nether Currency",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/10/1727937954-4242-i427174.png",
+    "endpoint": "it-all-starts-with-trillions-of-nether-currency"
+  },
+  {
+    "title": "My Wife Is The Demonic Cult Leader",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/mw6324532432-e1744120036847.jpg",
+    "endpoint": "my-wife-is-the-demonic-cult-leader"
+  },
+  {
+    "title": "The Demon King Who Lost His Job",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/09/maougakadakerjaan.jpg",
+    "endpoint": "the-demon-king-who-lost-his-job"
+  },
+  {
+    "title": "Kusunoki-san wa Koukou Debut ni Shippai shite Iru",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/12/kusunoki.jpg",
+    "endpoint": "kusunoki-san-wa-koukou-debut-ni-shippai-shite-iru"
+  },
+  {
+    "title": "Kokou no Ou to Hidamari no Hanayome ga Saikou no Fuufu ni Naru made",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/Kokou.jpg",
+    "endpoint": "kokou-no-ou-to-hidamari-no-hanayome-ga-saikou-no-fuufu-ni-naru-made"
+  },
+  {
+    "title": "I Was Immediately Mistaken for a Monster Genius Actor",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/09/I-Was-Immediately.jpg",
+    "endpoint": "i-was-immediately-mistaken-for-a-monster-genius-actor"
+  },
+  {
+    "title": "I am Self-disciplined And Invincible",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/06/fdsafa3tagjwegagyrfgse4yesthdfas.jpg",
+    "endpoint": "i-am-self-disciplined-and-invincible"
+  },
+  {
+    "title": "Apocalyptic Chef Awakening",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/11/aca523423423-e1699703771255.jpg",
+    "endpoint": "apocalyptic-chef-awakening"
+  },
+  {
+    "title": "Alone Necromancer (Solo Necromancer)",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2021/09/IMG_20210915_182720.jpg",
+    "endpoint": "alone-necromancer"
+  },
+  {
+    "title": "Yomi no Tsugai",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/10/yomitsugai.jpg",
+    "endpoint": "yomi-no-tsugai"
+  },
+  {
+    "title": "The Ultimate Shut-In (The Absolute Ruler of the House)",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/11/The-Ultimate-Shut-In-scaled-1.jpg",
+    "endpoint": "the-ultimate-shut-in"
+  },
+  {
+    "title": "The Prince of Joseon: A One-Way Journey to America",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/02/dasdfggwe.jpg",
+    "endpoint": "the-prince-of-joseon-a-one-way-journey-to-america"
+  },
+  {
+    "title": "The Support Ate it All",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/5df2b1d0-cac4-4142-8f2d-208bbb117024.jpg",
+    "endpoint": "the-support-ate-it-all"
+  },
+  {
+    "title": "Zombie Apocalypse 82-08",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/09/za273563-e1693805378594.jpg",
+    "endpoint": "zombie-apocalypse-82-08"
+  },
+  {
+    "title": "The Invincible Man",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/08/a4d6a4d6aw46e47a68.jpg",
+    "endpoint": "the-invincible-man"
+  },
+  {
+    "title": "Infinite Level Up in Murim",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2021/02/61609-e1614173643487.jpg",
+    "endpoint": "infinite-level-up-in-murim"
+  },
+  {
+    "title": "My Death Flags Show No Sign of Ending",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/12/ez3bvL.jpg",
+    "endpoint": "my-death-flags-show-no-sign-of-ending"
+  },
+  {
+    "title": "Koi wa Futago de Warikirenai",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/03/X8x6mp.jpg",
+    "endpoint": "koi-wa-futago-de-warikirenai"
+  },
+  {
+    "title": "The Great Mage Returns After 4000 Years",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/06/4000_Years-e1750690738164.jpg",
+    "endpoint": "the-great-mage-returns-after-4000-years"
+  },
+  {
+    "title": "Megami no Kafeterasu",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/06/oamQQB-m.jpg",
+    "endpoint": "megami-no-kafeterasu-goddess-cafe-terrace"
+  },
+  {
+    "title": "Brave X Devil Queen",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/09/bdv32323-e1695477338672.jpg",
+    "endpoint": "brave-x-devil-queen"
+  },
+  {
+    "title": "The Regressed Genius Player’s Legendary Weapon Creation",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/02/W8EN54-m.jpg",
+    "endpoint": "the-regressed-genius-players-legendary-weapon-creation"
+  },
+  {
+    "title": "Extraordinary World?! Me… A Vampire?!",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/extraordinary-193x278-1.webp",
+    "endpoint": "extraordinary-world-me-a-vampire"
+  },
+  {
+    "title": "Absolute Necromancer",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/03/absolute.jpeg",
+    "endpoint": "absolute-necromancer"
+  },
+  {
+    "title": "Henkyou no Yakushi, Miyako de S Rank Boukensha to naru",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/08/hk223423423-e1693315112744.jpg",
+    "endpoint": "henkyou-no-yakushi-miyako-de-s-rank-boukensha-to-naru"
+  },
+  {
+    "title": "Ao no Hako",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/02/anh32542342-e1709996132697.jpg",
+    "endpoint": "ao-no-hako"
+  },
+  {
+    "title": "Gyaru Gamer Homeraretai",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2021/12/ggwk734623423-e1640822516437.jpg",
+    "endpoint": "gyaru-gamer-homeraretai"
+  },
+  {
+    "title": "Tensei Shitara Slime Datta Ken",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/2NvrjL.jpg",
+    "endpoint": "tensei-shitara-slime-datta-ken"
+  },
+  {
+    "title": "Kanojo no Imouto to Kisu wo Shita",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/04/knno-e1714044471956.jpg",
+    "endpoint": "kanojo-no-imouto-to-kisu-wo-shita"
+  },
+  {
+    "title": "Player Who Can’t Level Up",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/resource.jpg",
+    "endpoint": "player-who-cant-level-up"
+  },
+  {
+    "title": "The Last Adventurer",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/03/komikcast_sang_petualang_terakhir.jpg",
+    "endpoint": "the-last-adventurer"
+  },
+  {
+    "title": "Shadow Agents: Suit Up (Suit Red)",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/1744287980-5954-i482940.jpg",
+    "endpoint": "shadow-agents-suit-up"
+  },
+  {
+    "title": "Kanan-sama wa Akumade Choroi",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/09/ksa23423-e1693635661833.jpg",
+    "endpoint": "kanan-sama-wa-akumade-choroi"
+  },
+  {
+    "title": "Dungeon Reset",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2020/03/fasf32asdf2adfzxcz-e1583222726140.jpg",
+    "endpoint": "dungeon-reset"
+  },
+  {
+    "title": "Tougen Anki",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2020/09/49754v1-e1601181584381.jpg",
+    "endpoint": "tougen-anki"
+  },
+  {
+    "title": "Shinka no Mi ~Shiranai Uchi ni Kachigumi Jinsei",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/01/snm6235242343-e1675685548335.jpg",
+    "endpoint": "shinka-no-mi-shiranai-uchi-ni-kachigumi-jinsei"
+  },
+  {
+    "title": "Hell Mode: Yarikomi Suki no Gamer wa Hai Settei no Isekai de Musou Suruw",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2020/12/BT000081985900100101-e1608786048642.jpg",
+    "endpoint": "hell-mode-yarikomi-suki-no-gamer-wa-hai-settei-no-isekai-de-musou-suru"
+  },
+  {
+    "title": "The Apex of Dragon Mastery",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/01/apex.jpg",
+    "endpoint": "the-apex-of-dragon-mastery"
+  },
+  {
+    "title": "Shuumatsu no Valkyrie",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/Jsn2hO.jpg",
+    "endpoint": "shuumatsu-no-valkyrie"
+  },
+  {
+    "title": "Return of the Mad Demon",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/10/crazy.jpg",
+    "endpoint": "return-of-the-mad-demon"
+  },
+  {
+    "title": "Player Who Returned 10,000 Years Later",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/07/10000.jpeg",
+    "endpoint": "player-who-returned-10000-years-later"
+  },
+  {
+    "title": "The Unbeatable Dungeon’s Lazy Boss Monster",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/12/unbeatable.jpg",
+    "endpoint": "the-unbeatable-dungeons-lazy-boss-monster"
+  },
+  {
+    "title": "Seirei Gensouki (Minazuki Futago)",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/12/18693179-0830-4870-b666-843c92e96ad9.jpg",
+    "endpoint": "seirei-gensouki-minazuki-futago"
+  },
+  {
+    "title": "Legendary Youngest Son of the Marquis House",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/06/Legendary_Youngest_Son_Cover-e1729489629184.jpg",
+    "endpoint": "legendary-youngest-son-of-the-marquis-house"
+  },
+  {
+    "title": "Reincarnation of the Murim Clan’s Former Ranker",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/06/former.jpeg",
+    "endpoint": "reincarnation-of-the-murim-clans-former-ranker"
+  },
+  {
+    "title": "Zombie Papa",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/a4w6e54.jpg",
+    "endpoint": "zombie-papa"
+  },
+  {
+    "title": "War of the Adults",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/woa3151432-e1744118376449.jpg",
+    "endpoint": "war-of-the-adults"
+  },
+  {
+    "title": "The Player Hides His Past",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/06/plh315141221-e1686984007368.jpg",
+    "endpoint": "the-player-hides-his-past"
+  },
+  {
+    "title": "The Genius Grandson of Namgung Clan",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/11/333dawe.jpg",
+    "endpoint": "the-genius-grandson-of-namgung-clan"
+  },
+  {
+    "title": "Player.",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2020/05/paerplayer.jpeg",
+    "endpoint": "player"
+  },
+  {
+    "title": "Nageki no Bourei wa Intai Shitai – Saijiyaku Hanta ni Yoru Saikiyou Patei Ikusei Jutsu",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/02/nbgy42532423423-e1709991913861.jpg",
+    "endpoint": "nageki-no-bourei-wa-intai-shitai-saijiyaku-hanta-ni-yoru-saikiyou-patei-ikusei-jutsu"
+  },
+  {
+    "title": "Irregular Of 1 In 7 Billion (One of a Kind Irregular)",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/07/1e441db5-3950-44bc-ba16-2d46a010b0ce.jpg",
+    "endpoint": "irregular-of-1-in-7-billion"
+  },
+  {
+    "title": "I Am the Virus Monarch",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/02/Picsart_24-02-14_09-46-16-203.jpg",
+    "endpoint": "i-am-the-virus-monarch"
+  },
+  {
+    "title": "I’m Going To Destroy This Country",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/02/ig65435343-e1738388466714.jpg",
+    "endpoint": "im-going-to-destroy-this-country"
+  },
+  {
+    "title": "Kami no Tekigousha: God of Infected",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/de87776d-4106-4687-93ee-8e5c9f0976f9.jpg",
+    "endpoint": "kami-no-tekigousha-god-of-infected"
+  },
+  {
+    "title": "Childhood Friend Of The Zenith",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/08/zenith.jpeg",
+    "endpoint": "childhood-friend-of-the-zenith"
+  },
+  {
+    "title": "All Hail the Sect Leaders",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/01/ahtsl2663452323-e1641173429938.jpg",
+    "endpoint": "all-hail-the-sect-leader"
+  },
+  {
+    "title": "Mayonaka Heart Tune",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/06/brBNaE.jpg",
+    "endpoint": "mayonaka-heart-tune-tune-in-to-the-midnight-heart"
+  },
+  {
+    "title": "Insanely-Talented Player",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/09/thumbnail_IMAG21_c88e92fa-e109-47d6-8a59-912749ff3a40.jpg",
+    "endpoint": "insanely-talented-player"
+  },
+  {
+    "title": "Return of The Greatest Lancer",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/06/lancer.jpeg",
+    "endpoint": "return-of-the-greatest-lancer"
+  },
+  {
+    "title": "Sakamoto Days",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/11/sd3262342334-e1669563048913.jpg",
+    "endpoint": "sakamoto-days"
+  },
+  {
+    "title": "Ruri Dragon",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/03/l6wXmo.jpg",
+    "endpoint": "ruri-dragon"
+  },
+  {
+    "title": "Kagurabachi",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/09/dafawfawwee.jpg",
+    "endpoint": "kagurabachi"
+  },
+  {
+    "title": "Sekai ni Hitori, Zenzokusei Mahou no Tsukaite",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/12/snh5235234213-e1672496240953.jpg",
+    "endpoint": "sekai-ni-hitori-zenzokusei-mahou-no-tsukaite"
+  },
+  {
+    "title": "Black Corporation: Joseon",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/12/6d54aw654e84.jpg",
+    "endpoint": "black-corporation-joseon"
+  }
+]
