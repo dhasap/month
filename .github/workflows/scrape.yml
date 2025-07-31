@@ -2,13 +2,9 @@ name: Scrape Latest Comics
 
 on:
   schedule:
-    # Menjalankan setiap 1 jam sekali
     - cron: '0 * * * *'
   workflow_dispatch:
-    # Menambahkan tombol "Run workflow" untuk menjalankan manual
 
-# *** INI DIA PERBAIKANNYA ***
-# Memberikan izin kepada robot untuk menulis ke repositori
 permissions:
   contents: write
 
@@ -30,9 +26,12 @@ jobs:
       - name: Run scraper
         run: npm start
 
-      - name: Commit and push if changed
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Upload debug artifacts
+        uses: actions/upload-artifact@v3
         with:
-          commit_message: 'Feat: Update data komik terbaru'
-          file_pattern: 'data/'
-          
+          name: debug-files
+          path: |
+            debug/screenshot.png
+            debug/page.html
+            debug/hasil_data.json
+            
