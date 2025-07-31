@@ -17,7 +17,7 @@ const ensureDirectoryExistence = (filePath) => {
 
 (async () => {
   let browser = null;
-  console.log("KURA-KURA: Memulai pekerjaan arsip...");
+  console.log("KURA-KURA: Memulai pekerjaan arsip dengan mata baru...");
 
   try {
     // Baca status terakhir
@@ -48,14 +48,14 @@ const ensureDirectoryExistence = (filePath) => {
 
     for (let i = 0; i < HALAMAN_PER_JALAN; i++) {
       const currentPage = startPage + i;
-      // Target halaman daftar komik utama
       const url = `https://komikcast.li/daftar-komik/page/${currentPage}/`;
       console.log(`KURA-KURA: Mengambil data dari ${url}`);
       await page.goto(url, { waitUntil: 'networkidle2' });
 
       const comicsOnPage = await page.evaluate(() => {
         const results = [];
-        // Selector yang berbeda untuk halaman daftar komik
+        // *** INI KACAMATA BARUNYA ***
+        // Selector ini khusus untuk halaman /daftar-komik/
         const items = document.querySelectorAll('.list-update_item-2');
         items.forEach(item => {
           const linkElement = item.querySelector('a.series');
@@ -74,23 +74,21 @@ const ensureDirectoryExistence = (filePath) => {
 
       if (comicsOnPage.length === 0) {
           console.log(`KURA-KURA: Halaman ${currentPage} kosong, mungkin sudah halaman terakhir. Berhenti.`);
-          status.lastPage = currentPage; // Simpan halaman terakhir yang dicek
-          break; // Keluar dari loop
+          status.lastPage = currentPage;
+          break;
       }
       
       allOldComics.push(...comicsOnPage);
       console.log(`KURA-KURA: Berhasil mendapatkan ${comicsOnPage.length} data dari halaman ${currentPage}.`);
-      status.lastPage = currentPage; // Update halaman terakhir yang berhasil diproses
+      status.lastPage = currentPage;
     }
     
-    // Hapus duplikat berdasarkan endpoint
     const uniqueComics = Array.from(new Map(allOldComics.map(item => [item['endpoint'], item])).values());
 
     console.log(`KURA-KURA: Total ${uniqueComics.length} komik di arsip. Menyimpan...`);
     ensureDirectoryExistence(FILE_ARSIP);
     fs.writeFileSync(FILE_ARSIP, JSON.stringify(uniqueComics, null, 2));
 
-    // Simpan status terakhir
     fs.writeFileSync(FILE_STATUS, JSON.stringify(status));
     console.log(`KURA-KURA: Pekerjaan selesai. Pekerjaan selanjutnya akan dimulai dari halaman ${status.lastPage + 1}`);
 
