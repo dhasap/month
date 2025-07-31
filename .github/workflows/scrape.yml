@@ -1,9 +1,10 @@
-name: Scrape Latest Comics
+# .github/workflows/scrape.yml - Jadwal Si Kelinci
+name: Scrape Komik Baru (Kelinci)
 
 on:
   schedule:
-    # Menjalankan setiap 1 jam sekali
-    - cron: '0 * * * *'
+    # Menjalankan setiap 2 jam sekali
+    - cron: '0 */2 * * *'
   workflow_dispatch:
 
 permissions:
@@ -15,22 +16,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
       - name: Install dependencies
         run: npm install
-
       - name: Run scraper
         run: npm start
-
-      # Kembali ke mode produksi: menyimpan file ke repo
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Feat: Update data komik terbaru'
-          file_pattern: 'data/'
-          
+          commit_message: 'Feat(Kelinci): Update data komik baru'
+          file_pattern: 'data/manga-list.json'
