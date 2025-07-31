@@ -7,6 +7,11 @@ on:
   workflow_dispatch:
     # Menambahkan tombol "Run workflow" untuk menjalankan manual
 
+# *** INI DIA PERBAIKANNYA ***
+# Memberikan izin kepada robot untuk menulis ke repositori
+permissions:
+  contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -29,7 +34,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'Feat: Update data komik terbaru'
-          # *** INI DIA PERBAIKANNYA ***
-          # Kita suruh dia mengawasi seluruh folder 'data'
           file_pattern: 'data/'
           
