@@ -5,7 +5,7 @@ name: Scrape Komik Baru (Kelinci)
 on:
   # Menjalankan setiap 1 jam sekali
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 19 * * *'
   
   # Menambahkan tombol "Run workflow" agar bisa dijalankan manual
   workflow_dispatch:
