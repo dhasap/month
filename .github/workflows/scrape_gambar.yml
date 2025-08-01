@@ -1,0 +1,33 @@
+name: Scrape URL Gambar (Semut)
+on:
+  schedule:
+    # Menjalankan setiap hari jam 12:00 UTC (siang)
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      # Kita perlu checkout repository dulu untuk mendapatkan file komik
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run image scraper (Semut)
+        run: node scraper_gambar.js
+
+      - name: Commit and push if changed
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Chore(Semut): Arsip data URL gambar'
+          # Simpan semua perubahan di folder comics dan file status si Semut
+          file_pattern: 'data/comics/ data/gambar_status.json'
