@@ -1,41 +1,22 @@
-# Nama workflow untuk robot Kura-kura
-name: Scrape Komik Lama (Kura-kura)
-
-# Pemicu workflow
+name: Scrape Detail Chapter (Kura-kura)
 on:
-  # Menambahkan tombol "Run workflow" agar bisa dijalankan manual
-  workflow_dispatch:
-  
   schedule:
-    # Menjalankan setiap hari jam 17:00 UTC (sekitar tengah malam WIB)
-    - cron: '0 5 * * *'
-
-# Memberikan izin kepada robot untuk menulis ke repositori
+    # Menjalankan setiap hari jam 00:00 UTC (dini hari)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 permissions:
   contents: write
-
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: '18'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run scraper (Kura-kura)
-        run: node scraper_lama.js
-
-      - name: Commit and push if changed
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - run: npm install
+      - run: node scraper_lama.js # Ini menjalankan skrip pengambil chapter
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Chore(Kura-kura): Arsip data komik lama'
-          # Menyimpan file arsip dan file status si Kura-kura
-          file_pattern: 'data/archive-list.json data/kura_kura_status.json'
-          
+          commit_message: 'Chore(Kura-kura): Arsip data chapter komik'
+          file_pattern: 'data/comics/ data/kura_kura_chapter_status.json'
