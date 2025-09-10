@@ -1,52 +1,157 @@
 [
   {
+    "title": "Solo Leveling: Ragnarok",
+    "latest_chapter_text": "Ch.54",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/08/Solev-Ragnarok.jpg",
+    "chapter_url": "https://komikcast.li/chapter/solo-leveling-ragnarok-chapter-54-bahasa-indonesia/",
+    "chapter_endpoint": "solo-leveling-ragnarok-chapter-54-bahasa-indonesia"
+  },
+  {
+    "title": "Against the Gods",
+    "latest_chapter_text": "Ch.743",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2019/08/r01293uirjwqjpwf-e1567007182605.jpg",
+    "chapter_url": "https://komikcast.li/chapter/against-the-gods-chapter-743bahasa-indonesia/",
+    "chapter_endpoint": "against-the-gods-chapter-743bahasa-indonesia"
+  },
+  {
+    "title": "The King’s Avatar",
+    "latest_chapter_text": "Ch.172",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/03/avatar.jpg",
+    "chapter_url": "https://komikcast.li/chapter/the-kings-avatar-chapter-172-bahasa-indonesia/",
+    "chapter_endpoint": "the-kings-avatar-chapter-172-bahasa-indonesia"
+  },
+  {
+    "title": "The King of Ten Thousand Presence (King of All Phases)",
+    "latest_chapter_text": "Ch.235",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2021/08/ar135235226263-e1629770949207.jpg",
+    "chapter_url": "https://komikcast.li/chapter/the-king-of-ten-thousand-presence-the-king-of-all-phase-chapter-235-bahasa-indonesia/",
+    "chapter_endpoint": "the-king-of-ten-thousand-presence-the-king-of-all-phase-chapter-235-bahasa-indonesia"
+  },
+  {
+    "title": "Grim Reaper of the Drifting Moon",
+    "latest_chapter_text": "Ch.104",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/07/drifting-e1752757619167.jpg",
+    "chapter_url": "https://komikcast.li/chapter/grim-reaper-of-the-drifting-moon-chapter-104-bahasa-indonesia/",
+    "chapter_endpoint": "grim-reaper-of-the-drifting-moon-chapter-104-bahasa-indonesia"
+  },
+  {
+    "title": "Guest Gun",
+    "latest_chapter_text": "Ch.46",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/08/Guest-Gun-e1754227274938.jpg",
+    "chapter_url": "https://komikcast.li/chapter/guest-gun-chapter-46-bahasa-indonesia/",
+    "chapter_endpoint": "guest-gun-chapter-46-bahasa-indonesia"
+  },
+  {
+    "title": "Academy’s Undercover Professor",
+    "latest_chapter_text": "Ch.135",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/11/undercover.jpg",
+    "chapter_url": "https://komikcast.li/chapter/academys-undercover-professor-chapter-135-bahasa-indonesia/",
+    "chapter_endpoint": "academys-undercover-professor-chapter-135-bahasa-indonesia"
+  },
+  {
+    "title": "Black Haze (Reboot)",
+    "latest_chapter_text": "Ch.39",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/Black_Haze_Reboot-e1738114515387.jpg",
+    "chapter_url": "https://komikcast.li/chapter/black-haze-reboot-chapter-39-bahasa-indonesia/",
+    "chapter_endpoint": "black-haze-reboot-chapter-39-bahasa-indonesia"
+  },
+  {
+    "title": "Myst, Might, Mayhem",
+    "latest_chapter_text": "Ch.89",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/wow.jpg",
+    "chapter_url": "https://komikcast.li/chapter/myst-might-mayhem-chapter-89-bahasa-indonesia/",
+    "chapter_endpoint": "myst-might-mayhem-chapter-89-bahasa-indonesia"
+  },
+  {
+    "title": "The World’s Best Kunlun Tavern",
+    "latest_chapter_text": "Ch.71",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/Screenshot_20250222_181600_Chrome-e1740223278869.jpg",
+    "chapter_url": "https://komikcast.li/chapter/the-worlds-best-kunlun-tavern-chapter-71-bahasa-indonesia/",
+    "chapter_endpoint": "the-worlds-best-kunlun-tavern-chapter-71-bahasa-indonesia"
+  },
+  {
+    "title": "Mikadono Sanshimai wa Angai, Choroi",
+    "latest_chapter_text": "Ch.68",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/09/2NR8NJ.jpg",
+    "chapter_url": "https://komikcast.li/chapter/mikadono-sanshimai-wa-angai-choroi-chapter-68-bahasa-indonesia/",
+    "chapter_endpoint": "mikadono-sanshimai-wa-angai-choroi-chapter-68-bahasa-indonesia"
+  },
+  {
+    "title": "1-nen A-gumi no Monster",
+    "latest_chapter_text": "Ch.72",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/01/1na375634534-e1679118699678.jpg",
+    "chapter_url": "https://komikcast.li/chapter/1-nen-a-gumi-no-monster-chapter-72-bahasa-indonesia/",
+    "chapter_endpoint": "1-nen-a-gumi-no-monster-chapter-72-bahasa-indonesia"
+  },
+  {
+    "title": "Gimai Seikatsu",
+    "latest_chapter_text": "Ch.31.2",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/02/MLberN.jpg",
+    "chapter_url": "https://komikcast.li/chapter/gimai-seikatsu-chapter-31-2-bahasa-indonesia/",
+    "chapter_endpoint": "gimai-seikatsu-chapter-31-2-bahasa-indonesia"
+  },
+  {
+    "title": "Ouritsu Mahou Gakuen no Saikasei: Slum Agari no Saikyou Mahoushi, Kizoku darake no Gakuen de Musou suru",
+    "latest_chapter_text": "Ch.132",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/03/qYZNy1.jpg",
+    "chapter_url": "https://komikcast.li/chapter/ouritsu-mahou-gakuen-no-saikasei-slum-agari-no-saikyou-mahoushi-kizoku-darake-no-gakuen-de-musou-suru-chapter-132-bahasa-indonesia/",
+    "chapter_endpoint": "ouritsu-mahou-gakuen-no-saikasei-slum-agari-no-saikyou-mahoushi-kizoku-darake-no-gakuen-de-musou-suru-chapter-132-bahasa-indonesia"
+  },
+  {
+    "title": "S-kyuu Guild wo Tsuihou saretakedo, Jitsu wa Ore dake Dragon no Kotoba ga Wakaru no de, Kidzuita Toki ni wa Ryuu Kishi no Chouten wo Kiwametemashita",
+    "latest_chapter_text": "Ch.33",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/10/BLeOW0.jpg",
+    "chapter_url": "https://komikcast.li/chapter/s-kyuu-guild-wo-tsuihou-saretakedo-jitsu-wa-ore-dake-dragon-no-kotoba-ga-wakaru-no-de-chapter-33-bahasa-indonesia/",
+    "chapter_endpoint": "s-kyuu-guild-wo-tsuihou-saretakedo-jitsu-wa-ore-dake-dragon-no-kotoba-ga-wakaru-no-de-chapter-33-bahasa-indonesia"
+  },
+  {
+    "title": "Archmage Restaurant",
+    "latest_chapter_text": "Ch.98",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/11/471-e1700672252686.png",
+    "chapter_url": "https://komikcast.li/chapter/archmage-restaurant-chapter-98-bahasa-indonesia/",
+    "chapter_endpoint": "archmage-restaurant-chapter-98-bahasa-indonesia"
+  },
+  {
+    "title": "The Wrong Way to use Healing Magic",
+    "latest_chapter_text": "Ch.76",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/01/wrong.jpg",
+    "chapter_url": "https://komikcast.li/chapter/the-wrong-way-to-use-healing-magic-chapter-76-bahasa-indonesia/",
+    "chapter_endpoint": "the-wrong-way-to-use-healing-magic-chapter-76-bahasa-indonesia"
+  },
+  {
+    "title": "Arifureta Shokugyou de Sekai Saikyou",
+    "latest_chapter_text": "Ch.88",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/oamy6b.jpg",
+    "chapter_url": "https://komikcast.li/chapter/arifureta-shokugyou-de-sekai-saikyou-chapter-88-bahasa-indonesia/",
+    "chapter_endpoint": "arifureta-shokugyou-de-sekai-saikyou-chapter-88-bahasa-indonesia"
+  },
+  {
+    "title": "The Max-Level Player’s 100th Regression",
+    "latest_chapter_text": "Ch.69",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/03/resource-e1743515620349.png",
+    "chapter_url": "https://komikcast.li/chapter/the-max-level-players-100th-regression-chapter-69-bahasa-indonesia/",
+    "chapter_endpoint": "the-max-level-players-100th-regression-chapter-69-bahasa-indonesia"
+  },
+  {
+    "title": "Talent-Swallowing Magician",
+    "latest_chapter_text": "Ch.106",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/TalentSwallowing-e1752723672949.jpg",
+    "chapter_url": "https://komikcast.li/chapter/talent-swallowing-magician-chapter-106-bahasa-indonesia/",
+    "chapter_endpoint": "talent-swallowing-magician-chapter-106-bahasa-indonesia"
+  },
+  {
+    "title": "My Dad Is Too Strong",
+    "latest_chapter_text": "Ch.221",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/my-dad-is-too-strong-e1751035333537.jpg",
+    "chapter_url": "https://komikcast.li/chapter/my-dad-is-too-strong-chapter-221-bahasa-indonesia/",
+    "chapter_endpoint": "my-dad-is-too-strong-chapter-221-bahasa-indonesia"
+  },
+  {
     "title": "I Obtained a Mythic Item",
     "latest_chapter_text": "Ch.145",
     "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/½A¸®Ai_AE÷½oAI_½ae³×AI_650x758.jpg",
     "chapter_url": "https://komikcast.li/chapter/i-obtained-a-mythic-item-chapter-145-bahasa-indonesia/",
     "chapter_endpoint": "i-obtained-a-mythic-item-chapter-145-bahasa-indonesia"
-  },
-  {
-    "title": "Against the Gods",
-    "latest_chapter_text": "Ch.742",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2019/08/r01293uirjwqjpwf-e1567007182605.jpg",
-    "chapter_url": "https://komikcast.li/chapter/against-the-gods-chapter-742-bahasa-indonesia/",
-    "chapter_endpoint": "against-the-gods-chapter-742-bahasa-indonesia"
-  },
-  {
-    "title": "The King’s Avatar",
-    "latest_chapter_text": "Ch.171",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2024/03/avatar.jpg",
-    "chapter_url": "https://komikcast.li/chapter/the-kings-avatar-chapter-171-bahasa-indonesia/",
-    "chapter_endpoint": "the-kings-avatar-chapter-171-bahasa-indonesia"
-  },
-  {
-    "title": "The King of Ten Thousand Presence (King of All Phases)",
-    "latest_chapter_text": "Ch.234",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2021/08/ar135235226263-e1629770949207.jpg",
-    "chapter_url": "https://komikcast.li/chapter/the-king-of-ten-thousand-presence-the-king-of-all-phase-chapter-234-bahasa-indonesia/",
-    "chapter_endpoint": "the-king-of-ten-thousand-presence-the-king-of-all-phase-chapter-234-bahasa-indonesia"
-  },
-  {
-    "title": "Guest Gun",
-    "latest_chapter_text": "Ch.45",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2024/08/Guest-Gun-e1754227274938.jpg",
-    "chapter_url": "https://komikcast.li/chapter/guest-gun-chapter-45-bahasa-indonesia/",
-    "chapter_endpoint": "guest-gun-chapter-45-bahasa-indonesia"
-  },
-  {
-    "title": "The World’s Best Kunlun Tavern",
-    "latest_chapter_text": "Ch.70",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/Screenshot_20250222_181600_Chrome-e1740223278869.jpg",
-    "chapter_url": "https://komikcast.li/chapter/the-worlds-best-kunlun-tavern-chapter-70-bahasa-indonesia/",
-    "chapter_endpoint": "the-worlds-best-kunlun-tavern-chapter-70-bahasa-indonesia"
-  },
-  {
-    "title": "Mikadono Sanshimai wa Angai, Choroi",
-    "latest_chapter_text": "Ch.66",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/09/2NR8NJ.jpg",
-    "chapter_url": "https://komikcast.li/chapter/mikadono-sanshimai-wa-angai-choroi-chapter-66-bahasa-indonesia/",
-    "chapter_endpoint": "mikadono-sanshimai-wa-angai-choroi-chapter-66-bahasa-indonesia"
   },
   {
     "title": "Monogatari no Kuromaku ni Tensei shite",
@@ -75,20 +180,6 @@
     "cover_image": "https://komikcast.li/wp-content/uploads/2022/08/rst623523523452-e1660542828454.jpg",
     "chapter_url": "https://komikcast.li/chapter/return-of-the-sss-class-ranker-chapter-156-bahasa-indonesia/",
     "chapter_endpoint": "return-of-the-sss-class-ranker-chapter-156-bahasa-indonesia"
-  },
-  {
-    "title": "Ouritsu Mahou Gakuen no Saikasei: Slum Agari no Saikyou Mahoushi, Kizoku darake no Gakuen de Musou suru",
-    "latest_chapter_text": "Ch.131",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/03/qYZNy1.jpg",
-    "chapter_url": "https://komikcast.li/chapter/ouritsu-mahou-gakuen-no-saikasei-slum-agari-no-saikyou-mahoushi-kizoku-darake-no-gakuen-de-musou-suru-chapter-131-bahasa-indonesia/",
-    "chapter_endpoint": "ouritsu-mahou-gakuen-no-saikasei-slum-agari-no-saikyou-mahoushi-kizoku-darake-no-gakuen-de-musou-suru-chapter-131-bahasa-indonesia"
-  },
-  {
-    "title": "S-kyuu Guild wo Tsuihou saretakedo, Jitsu wa Ore dake Dragon no Kotoba ga Wakaru no de, Kidzuita Toki ni wa Ryuu Kishi no Chouten wo Kiwametemashita",
-    "latest_chapter_text": "Ch.31",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2024/10/BLeOW0.jpg",
-    "chapter_url": "https://komikcast.li/chapter/s-kyuu-guild-wo-tsuihou-saretakedo-jitsu-wa-ore-dake-dragon-no-kotoba-ga-wakaru-no-de-chapter-31-bahasa-indonesia/",
-    "chapter_endpoint": "s-kyuu-guild-wo-tsuihou-saretakedo-jitsu-wa-ore-dake-dragon-no-kotoba-ga-wakaru-no-de-chapter-31-bahasa-indonesia"
   },
   {
     "title": "World Teacher: Isekaishiki Kyouiku Agent",
@@ -189,13 +280,6 @@
     "chapter_endpoint": "blue-lock-chapter-316-bahasa-indonesia"
   },
   {
-    "title": "My Dad Is Too Strong",
-    "latest_chapter_text": "Ch.220",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/my-dad-is-too-strong-e1751035333537.jpg",
-    "chapter_url": "https://komikcast.li/chapter/my-dad-is-too-strong-chapter-220-bahasa-indonesia/",
-    "chapter_endpoint": "my-dad-is-too-strong-chapter-220-bahasa-indonesia"
-  },
-  {
     "title": "Janome-san wa Hohoemitai!",
     "latest_chapter_text": "Ch.02",
     "cover_image": "https://komikcast.li/wp-content/uploads/2025/08/kc_janome-san.jpg",
@@ -257,13 +341,6 @@
     "cover_image": "https://komikcast.li/wp-content/uploads/2025/03/Ghostly_Poem-e1741764186388.png",
     "chapter_url": "https://komikcast.li/chapter/heart-pounding-ghostly-poem-chapter-26-bahasa-indonesia/",
     "chapter_endpoint": "heart-pounding-ghostly-poem-chapter-26-bahasa-indonesia"
-  },
-  {
-    "title": "Talent-Swallowing Magician",
-    "latest_chapter_text": "Ch.105",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/07/TalentSwallowing-e1752723672949.jpg",
-    "chapter_url": "https://komikcast.li/chapter/talent-swallowing-magician-chapter-105-bahasa-indonesia/",
-    "chapter_endpoint": "talent-swallowing-magician-chapter-105-bahasa-indonesia"
   },
   {
     "title": "The World’s Best Sect of Dependency",
@@ -406,20 +483,6 @@
     "chapter_endpoint": "taida-na-akujo-kizoku-ni-tensei-shita-ore-shinario-o-bukko-wa-shitara-kikaku-gai-no-maryoku-de-saikyou-ni-natta-chapter-12-bahasa-indonesia"
   },
   {
-    "title": "Solo Leveling: Ragnarok",
-    "latest_chapter_text": "Ch.53",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/08/Solev-Ragnarok.jpg",
-    "chapter_url": "https://komikcast.li/chapter/solo-leveling-ragnarok-chapter-53-bahasa-indonesia/",
-    "chapter_endpoint": "solo-leveling-ragnarok-chapter-53-bahasa-indonesia"
-  },
-  {
-    "title": "Grim Reaper of the Drifting Moon",
-    "latest_chapter_text": "Ch.103",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2024/07/drifting-e1752757619167.jpg",
-    "chapter_url": "https://komikcast.li/chapter/grim-reaper-of-the-drifting-moon-chapter-103-bahasa-indonesia/",
-    "chapter_endpoint": "grim-reaper-of-the-drifting-moon-chapter-103-bahasa-indonesia"
-  },
-  {
     "title": "A Disaster-Class Hero Has Returned",
     "latest_chapter_text": "Ch.142",
     "cover_image": "https://komikcast.li/wp-content/uploads/2022/08/Lee-gun.jpg",
@@ -460,68 +523,5 @@
     "cover_image": "https://komikcast.li/wp-content/uploads/2025/03/W8zma4.jpg",
     "chapter_url": "https://komikcast.li/chapter/nito-no-taidana-isekai-shoukougun-chapter-38-2-bahasa-indonesia/",
     "chapter_endpoint": "nito-no-taidana-isekai-shoukougun-chapter-38-2-bahasa-indonesia"
-  },
-  {
-    "title": "The Unfavorable Job “Appraiser” Is Actually the Strongest",
-    "latest_chapter_text": "Ch.105",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/08/unfavor.jpg",
-    "chapter_url": "https://komikcast.li/chapter/the-unfavorable-job-appraiser-is-actually-the-strongest-chapter-105-bahasa-indonesia/",
-    "chapter_endpoint": "the-unfavorable-job-appraiser-is-actually-the-strongest-chapter-105-bahasa-indonesia"
-  },
-  {
-    "title": "Black Haze (Reboot)",
-    "latest_chapter_text": "Ch.38",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/Black_Haze_Reboot-e1738114515387.jpg",
-    "chapter_url": "https://komikcast.li/chapter/black-haze-reboot-chapter-38-bahasa-indonesia/",
-    "chapter_endpoint": "black-haze-reboot-chapter-38-bahasa-indonesia"
-  },
-  {
-    "title": "The Max-Level Player’s 100th Regression",
-    "latest_chapter_text": "Ch.68",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/03/resource-e1743515620349.png",
-    "chapter_url": "https://komikcast.li/chapter/the-max-level-players-100th-regression-chapter-68-bahasa-indonesia/",
-    "chapter_endpoint": "the-max-level-players-100th-regression-chapter-68-bahasa-indonesia"
-  },
-  {
-    "title": "God of Martial Arts",
-    "latest_chapter_text": "Ch.899",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2019/08/mf903fkaedfad-e1565971570852.jpg",
-    "chapter_url": "https://komikcast.li/chapter/god-of-martial-arts-chapter-899-bahasa-indonesia/",
-    "chapter_endpoint": "god-of-martial-arts-chapter-899-bahasa-indonesia"
-  },
-  {
-    "title": "Academy’s Undercover Professor",
-    "latest_chapter_text": "Ch.134",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2023/11/undercover.jpg",
-    "chapter_url": "https://komikcast.li/chapter/academys-undercover-professor-chapter-134-bahasa-indonesia/",
-    "chapter_endpoint": "academys-undercover-professor-chapter-134-bahasa-indonesia"
-  },
-  {
-    "title": "Myst, Might, Mayhem",
-    "latest_chapter_text": "Ch.88",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/wow.jpg",
-    "chapter_url": "https://komikcast.li/chapter/myst-might-mayhem-chapter-88-bahasa-indonesia/",
-    "chapter_endpoint": "myst-might-mayhem-chapter-88-bahasa-indonesia"
-  },
-  {
-    "title": "Tatoeba Last Dungeon Mae no Mura no Shounen ga Joban no Machi de Kurasu Youna Monogatari",
-    "latest_chapter_text": "Ch.47",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2023/11/24d6aw468e756645455.jpg",
-    "chapter_url": "https://komikcast.li/chapter/tatoeba-last-dungeon-mae-no-mura-no-shounen-ga-joban-no-machi-de-kurasu-youna-monogatari-chapter-47-bahasa-indonesia/",
-    "chapter_endpoint": "tatoeba-last-dungeon-mae-no-mura-no-shounen-ga-joban-no-machi-de-kurasu-youna-monogatari-chapter-47-bahasa-indonesia"
-  },
-  {
-    "title": "Kill The Dragon",
-    "latest_chapter_text": "Ch.162",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2022/04/kill-the-dragon.jpg",
-    "chapter_url": "https://komikcast.li/chapter/kill-the-dragon-chapter-162-bahasa-indonesia/",
-    "chapter_endpoint": "kill-the-dragon-chapter-162-bahasa-indonesia"
-  },
-  {
-    "title": "Reborn as the Enemy Prince",
-    "latest_chapter_text": "Ch.74",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/Enemy-Prince-e1755704464906.jpg",
-    "chapter_url": "https://komikcast.li/chapter/reborn-as-the-enemy-prince-chapter-74-bahasa-indonesia/",
-    "chapter_endpoint": "reborn-as-the-enemy-prince-chapter-74-bahasa-indonesia"
   }
 ]
