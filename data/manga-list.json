@@ -1,5 +1,89 @@
 [
   {
+    "title": "Asura (Ryu Ki-Un)",
+    "latest_chapter_text": "Ch.50 Fix",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/06/asura.jpg",
+    "chapter_url": "https://komikcast.li/chapter/asura-ryu-ki-un-chapter-50-bahasa-indonesia/",
+    "chapter_endpoint": "asura-ryu-ki-un-chapter-50-bahasa-indonesia"
+  },
+  {
+    "title": "Record of The Mightiest Lord",
+    "latest_chapter_text": "Ch.64",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/12/mightiest.jpg",
+    "chapter_url": "https://komikcast.li/chapter/record-of-the-mightiest-lord-chapter-64-bahasa-indonesia/",
+    "chapter_endpoint": "record-of-the-mightiest-lord-chapter-64-bahasa-indonesia"
+  },
+  {
+    "title": "The Immortal as a Slave, the God as a Servant, the Emperor’s Watchdog",
+    "latest_chapter_text": "Ch.52",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/10/mzc0033o78wg5eq1718612443.jpg",
+    "chapter_url": "https://komikcast.li/chapter/the-immortal-as-a-slave-the-god-as-a-servant-the-emperors-watchdog-chapter-52-bahasa-indonesia/",
+    "chapter_endpoint": "the-immortal-as-a-slave-the-god-as-a-servant-the-emperors-watchdog-chapter-52-bahasa-indonesia"
+  },
+  {
+    "title": "Revenge of the Iron-Blooded Sword Hound",
+    "latest_chapter_text": "Ch.132",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/03/Kembalinya_Sang_Anjing_Pemburu_yang_Ganas.jpg",
+    "chapter_url": "https://komikcast.li/chapter/revenge-of-the-iron-blooded-sword-hound-chapter-132-bahasa-indonesia/",
+    "chapter_endpoint": "revenge-of-the-iron-blooded-sword-hound-chapter-132-bahasa-indonesia"
+  },
+  {
+    "title": "The King of Ten Thousand Presence (King of All Phases)",
+    "latest_chapter_text": "Ch.253",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2021/08/ar135235226263-e1629770949207.jpg",
+    "chapter_url": "https://komikcast.li/chapter/the-king-of-ten-thousand-presence-the-king-of-all-phase-chapter-253-bahasa-indonesia/",
+    "chapter_endpoint": "the-king-of-ten-thousand-presence-the-king-of-all-phase-chapter-253-bahasa-indonesia"
+  },
+  {
+    "title": "Wild Ranker",
+    "latest_chapter_text": "Ch.19",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/Wild_Ranker-e1748236044324.jpg",
+    "chapter_url": "https://komikcast.li/chapter/wild-ranker-chapter-19-bahasa-indonesia/",
+    "chapter_endpoint": "wild-ranker-chapter-19-bahasa-indonesia"
+  },
+  {
+    "title": "Academy’s Genius Swordmaster",
+    "latest_chapter_text": "Ch.120",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2023/07/academy.jpg",
+    "chapter_url": "https://komikcast.li/chapter/academys-genius-swordmaster-chapter-120-bahasa-indonesia/",
+    "chapter_endpoint": "academys-genius-swordmaster-chapter-120-bahasa-indonesia"
+  },
+  {
+    "title": "Sleeping Ranker",
+    "latest_chapter_text": "Ch.148",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2024/01/sleeping.jpg",
+    "chapter_url": "https://komikcast.li/chapter/sleeping-ranker-chapter-148-bahasa-indonesia/",
+    "chapter_endpoint": "sleeping-ranker-chapter-148-bahasa-indonesia"
+  },
+  {
+    "title": "Maou Tsukai no Saikyou Shihai",
+    "latest_chapter_text": "Ch.28",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2022/06/Maou-Tsukai-no-Saikyou-e1655038156977.jpg",
+    "chapter_url": "https://komikcast.li/chapter/maou-tsukai-no-saikyou-shihai-chapter-28-bahasa-indonesia/",
+    "chapter_endpoint": "maou-tsukai-no-saikyou-shihai-chapter-28-bahasa-indonesia"
+  },
+  {
+    "title": "Tensei Shitara Slime Datta Ken",
+    "latest_chapter_text": "Ch.134",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/2NvrjL.jpg",
+    "chapter_url": "https://komikcast.li/chapter/tensei-shitara-slime-datta-ken-chapter-134-bahasa-indonesia/",
+    "chapter_endpoint": "tensei-shitara-slime-datta-ken-chapter-134-bahasa-indonesia"
+  },
+  {
+    "title": "Tsuihou Sareta Tenshou Juu Kishi wa Game Chishiki de Musou Suru",
+    "latest_chapter_text": "Ch.132",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/pR6rG0.jpg",
+    "chapter_url": "https://komikcast.li/chapter/tsuihou-sareta-tenshou-juu-kishi-wa-game-chishiki-de-musou-suru-chapter-132-bahasa-indonesia/",
+    "chapter_endpoint": "tsuihou-sareta-tenshou-juu-kishi-wa-game-chishiki-de-musou-suru-chapter-132-bahasa-indonesia"
+  },
+  {
+    "title": "Mushoku no Eiyuu: Betsu ni Skill Nanka Iranakattan daga",
+    "latest_chapter_text": "Ch.47",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/09/eb2e14ac-20db-412b.jpg",
+    "chapter_url": "https://komikcast.li/chapter/mushoku-no-eiyuu-betsu-ni-skill-nanka-iranakattan-daga-chapter-47-bahasa-indonesia/",
+    "chapter_endpoint": "mushoku-no-eiyuu-betsu-ni-skill-nanka-iranakattan-daga-chapter-47-bahasa-indonesia"
+  },
+  {
     "title": "Heart-Pounding Ghostly Poem",
     "latest_chapter_text": "Ch.29",
     "cover_image": "https://komikcast.li/wp-content/uploads/2025/09/Ghostly-Poem-scaled-e1758980523920.png",
@@ -14,13 +98,6 @@
     "chapter_endpoint": "seoul-station-druid-chapter-207-bahasa-indonesia"
   },
   {
-    "title": "The King of Ten Thousand Presence (King of All Phases)",
-    "latest_chapter_text": "Ch.252 FIX",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2021/08/ar135235226263-e1629770949207.jpg",
-    "chapter_url": "https://komikcast.li/chapter/the-king-of-ten-thousand-presence-the-king-of-all-phase-chapter-251-bahasa-indonesia/",
-    "chapter_endpoint": "the-king-of-ten-thousand-presence-the-king-of-all-phase-chapter-251-bahasa-indonesia"
-  },
-  {
     "title": "Swordmaster’s Youngest Son",
     "latest_chapter_text": "Ch.178",
     "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/Swordmasters-Youngest-Son-e1748696057989.jpg",
@@ -28,39 +105,11 @@
     "chapter_endpoint": "swordmasters-youngest-son-chapter-178-bahasa-indonesia"
   },
   {
-    "title": "Record of The Mightiest Lord",
-    "latest_chapter_text": "Ch.62",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2022/12/mightiest.jpg",
-    "chapter_url": "https://komikcast.li/chapter/record-of-the-mightiest-lord-chapter-62-bahasa-indonesia/",
-    "chapter_endpoint": "record-of-the-mightiest-lord-chapter-62-bahasa-indonesia"
-  },
-  {
-    "title": "The Immortal as a Slave, the God as a Servant, the Emperor’s Watchdog",
-    "latest_chapter_text": "Ch.51",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2024/10/mzc0033o78wg5eq1718612443.jpg",
-    "chapter_url": "https://komikcast.li/chapter/the-immortal-as-a-slave-the-god-as-a-servant-the-emperors-watchdog-chapter-51-bahasa-indonesia/",
-    "chapter_endpoint": "the-immortal-as-a-slave-the-god-as-a-servant-the-emperors-watchdog-chapter-51-bahasa-indonesia"
-  },
-  {
-    "title": "Wild Ranker",
-    "latest_chapter_text": "Ch.18",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/Wild_Ranker-e1748236044324.jpg",
-    "chapter_url": "https://komikcast.li/chapter/wild-ranker-chapter-18-bahasa-indonesia/",
-    "chapter_endpoint": "wild-ranker-chapter-18-bahasa-indonesia"
-  },
-  {
     "title": "The Undefeatable Swordsman",
     "latest_chapter_text": "Ch.262",
     "cover_image": "https://komikcast.li/wp-content/uploads/2025/02/undefeatable_Swordsman-e1746855018904.jpg",
     "chapter_url": "https://komikcast.li/chapter/the-undefeatable-swordsman-chapter-262-bahasa-indonesia/",
     "chapter_endpoint": "the-undefeatable-swordsman-chapter-262-bahasa-indonesia"
-  },
-  {
-    "title": "Sleeping Ranker",
-    "latest_chapter_text": "Ch.147",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2024/01/sleeping.jpg",
-    "chapter_url": "https://komikcast.li/chapter/sleeping-ranker-chapter-147-bahasa-indonesia/",
-    "chapter_endpoint": "sleeping-ranker-chapter-147-bahasa-indonesia"
   },
   {
     "title": "Will You Marry Me If I Quit Being an Idol?!",
@@ -96,27 +145,6 @@
     "cover_image": "https://komikcast.li/wp-content/uploads/2024/05/Eternally-Regressing-e1715955617222.jpg",
     "chapter_url": "https://komikcast.li/chapter/eternally-regressing-knight-chapter-77-bahasa-indonesia/",
     "chapter_endpoint": "eternally-regressing-knight-chapter-77-bahasa-indonesia"
-  },
-  {
-    "title": "Maou Tsukai no Saikyou Shihai",
-    "latest_chapter_text": "Ch.27",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2022/06/Maou-Tsukai-no-Saikyou-e1655038156977.jpg",
-    "chapter_url": "https://komikcast.li/chapter/maou-tsukai-no-saikyou-shihai-chapter-27-bahasa-indonesia/",
-    "chapter_endpoint": "maou-tsukai-no-saikyou-shihai-chapter-27-bahasa-indonesia"
-  },
-  {
-    "title": "Tsuihou Sareta Tenshou Juu Kishi wa Game Chishiki de Musou Suru",
-    "latest_chapter_text": "Ch.131",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/04/pR6rG0.jpg",
-    "chapter_url": "https://komikcast.li/chapter/tsuihou-sareta-tenshou-juu-kishi-wa-game-chishiki-de-musou-suru-chapter-131-bahasa-indonesia/",
-    "chapter_endpoint": "tsuihou-sareta-tenshou-juu-kishi-wa-game-chishiki-de-musou-suru-chapter-131-bahasa-indonesia"
-  },
-  {
-    "title": "Mushoku no Eiyuu: Betsu ni Skill Nanka Iranakattan daga",
-    "latest_chapter_text": "Ch.45",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/09/eb2e14ac-20db-412b.jpg",
-    "chapter_url": "https://komikcast.li/chapter/mushoku-no-eiyuu-betsu-ni-skill-nanka-iranakattan-daga-chapter-45-bahasa-indonesia/",
-    "chapter_endpoint": "mushoku-no-eiyuu-betsu-ni-skill-nanka-iranakattan-daga-chapter-45-bahasa-indonesia"
   },
   {
     "title": "Heavenly Grand Archive’s Young Master",
@@ -331,7 +359,7 @@
   {
     "title": "Black Killer Whale Baby",
     "latest_chapter_text": "Ch.70",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2024/07/Black_Whale_Killer-e1720101315681.png",
+    "cover_image": "https://komikcast.li/wp-content/uploads/2025/09/Black-Killer-Whale-Baby-e1759087649861.png",
     "chapter_url": "https://komikcast.li/chapter/black-killer-whale-baby-chapter-70-bahasa-indonesia/",
     "chapter_endpoint": "black-killer-whale-baby-chapter-70-bahasa-indonesia"
   },
@@ -495,33 +523,5 @@
     "cover_image": "https://komikcast.li/wp-content/uploads/2025/02/oam6Xd.jpg",
     "chapter_url": "https://komikcast.li/chapter/henkyou-mob-kizoku-no-uchi-ni-totsui-de-kita-akuyaku-reijou-ga-chapter-10-5-bahasa-indonesia/",
     "chapter_endpoint": "henkyou-mob-kizoku-no-uchi-ni-totsui-de-kita-akuyaku-reijou-ga-chapter-10-5-bahasa-indonesia"
-  },
-  {
-    "title": "I Obtained a Mythic Item",
-    "latest_chapter_text": "Ch.146",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/01/½A¸®Ai_AE÷½oAI_½ae³×AI_650x758.jpg",
-    "chapter_url": "https://komikcast.li/chapter/i-obtained-a-mythic-item-chapter-146-bahasa-indonesia/",
-    "chapter_endpoint": "i-obtained-a-mythic-item-chapter-146-bahasa-indonesia"
-  },
-  {
-    "title": "The Last Adventurer",
-    "latest_chapter_text": "Ch.89",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2024/03/komikcast_sang_petualang_terakhir.jpg",
-    "chapter_url": "https://komikcast.li/chapter/the-last-adventurer-chapter-89-bahasa-indonesia/",
-    "chapter_endpoint": "the-last-adventurer-chapter-89-bahasa-indonesia"
-  },
-  {
-    "title": "Revenge of the Iron-Blooded Sword Hound",
-    "latest_chapter_text": "Ch.131",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2024/03/Kembalinya_Sang_Anjing_Pemburu_yang_Ganas.jpg",
-    "chapter_url": "https://komikcast.li/chapter/revenge-of-the-iron-blooded-sword-hound-chapter-131-bahasa-indonesia/",
-    "chapter_endpoint": "revenge-of-the-iron-blooded-sword-hound-chapter-131-bahasa-indonesia"
-  },
-  {
-    "title": "Holy Emperor’s Grandson is a Necromancer",
-    "latest_chapter_text": "Ch.87",
-    "cover_image": "https://komikcast.li/wp-content/uploads/2025/05/Holy-Emperor-Grandson-e1755876243225.jpg",
-    "chapter_url": "https://komikcast.li/chapter/holy-emperors-grandson-is-a-necromancer-chapter-87-bahasa-indonesia/",
-    "chapter_endpoint": "holy-emperors-grandson-is-a-necromancer-chapter-87-bahasa-indonesia"
   }
 ]
